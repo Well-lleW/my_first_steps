@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Atividade 06-10-2021</title>
+
+    <style>
+        input:hover,
+        label:hover,
+        button:hover {
+            background-color: lightyellow;
+        }
+
+        button {
+            margin-top: 5px;
+            margin-left: 10px;
+            padding: 7px 21px;
+            border: white;
+            cursor: pointer;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form type="get" action="https://www.alphaedtech.org.br">
+        <fieldset>
+            <legend>
+                Cadastro do Aluno:
+            </legend>
+
+            <p><label>Nome: <input name="name" type="text" required> </label></p>
+            <p><label>Idade: <input name="age" type="date" required></label></p>
+
+            <div>
+                <label><input type="radio" name="turma" value="1" required> Turma 1</label>
+                <label><input type="radio" name="turma" value="2"> Turma 2</label>
+                <label><input type="radio" name="turma" value="3"> Turma 3</label>
+            </div>
+
+            <br />
+
+            <fieldset>
+                <legend>
+                    Usuário/Senha:
+                </legend>
+
+                <p><label>Usuário: <input name="user" type="text" required> </label></p>
+                <p><label>Senha: <input name="password" type="password" minlength="8" maxlength="16" size="16" id="password1" oninput="PasswordConfirm();" required title="Digite uma senha de 8-16"></label></p>
+                <p><label>Confirmar Senha: <input name="password" type="password" minlength="8" maxlength="16" size="16" id="password2" oninput="PasswordConfirm();" required></label></p>
+            </fieldset>
+
+            <div align="center">
+                <fieldset class="block">
+                    <legend>
+                        Pesquisa Satisfação:
+                    </legend>
+                    <p><label>O que está achando do curso: <br /><input name="rate" type="range" max="10" min="0" setp="1" list="score" required></label><br />Na escala de 1 a 10</p>
+
+                </fieldset>
+                <p><label><input name="term" type="checkbox" required></label>Li e concdordo com o <a href="https://www.alphaedtech.org.br" target=(_blank)>termo.</a></p>
+                <button type="submit">Confirmar</button>
+                <button type="reset">Apagar</button>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
+<datalist id="score">
+    <option value="0">
+    <option value="1">
+    <option value="2">
+    <option value="3">
+    <option value="4">
+    <option value="5">
+    <option value="6">
+    <option value="7">
+    <option value="8">
+    <option value="9">
+    <option value="10">
+</datalist>
+
+<script>
+  function PasswordConfirm(str) {
+    const password1 = document.getElementById('password1');
+    const password2 = document.getElementById('password2');
+
+    if (password1.value === password2.value) {
+      password2.setCustomValidity('');
+    } else {
+      password2.setCustomValidity('A senha tem que ser igual');
+    }
+    console.log('password2 customError ', document.getElementById('password2').validity.customError);
+    console.log('password2 validationMessage ', document.getElementById('password2').validationMessage);
+  }
+
+</script>

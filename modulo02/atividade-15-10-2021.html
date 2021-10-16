@@ -10,14 +10,12 @@
     <meta property="og:description" content="Aprendendo como usar Canvas.">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/atividade-15-10-2021.html" />
-    <meta property="og:image" content="https://well-llew.github.io/my_first_steps/modulo02/atividade-15-10-2021.html" />
-</head>
+    <meta property="og:image" content="https://github.com/Well-lleW/my_first_steps/blob/main/arquivos/a15-10-2021.png" />
 
 <style>
     canvas {
         width: 100vw;
         width: 100%;
-        position: cover;
         background: linear-gradient(to bottom, powderblue 55%, silver 56%, darkgreen 58%, lightgreen 100%);
     }
 </style>
@@ -72,11 +70,6 @@
     }
     draw(960, 750, 100, 0, 7) 
 
-    loadImage('./logo.png').then(image => {
-        context.drawImage(image, 340, 515, 70, 70)
-        const buffer = canvas.toBuffer('image/png')
-        fs.writeFileSync('./test.png', buffer)
-    })
     </script>
     
 </body>

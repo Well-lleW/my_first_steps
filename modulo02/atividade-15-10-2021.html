@@ -72,6 +72,11 @@
     }
     draw(960, 750, 100, 0, 7) 
 
+    loadImage('./logo.png').then(image => {
+        context.drawImage(image, 340, 515, 70, 70)
+        const buffer = canvas.toBuffer('image/png')
+        fs.writeFileSync('./test.png', buffer)
+    })
     </script>
     
 </body>

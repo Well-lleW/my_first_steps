@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Atividade 15/10/2021</title>
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Atividade 15/10/2021" />
+    <meta property="og:site_name" content="Atividade 15/10/2021">
+    <meta property="og:description" content="Aprendendo como usar Canvas.">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/atividade-15-10-2021.html" />
+    <meta property="og:image" content="canvas" />
+</head>
+
+<style>
+    canvas {
+        width: 100vw;
+        width: 100%;
+        position: cover;
+        background: linear-gradient(to bottom, powderblue 0%, silver 50%, darkgreen 51%, lightgreen 100%);
+    }
+</style>
+
+<body>
+    <canvas id="canvas" width="1920" height="1080">
+        <p>Seu navegador não suporta o elemento &lt;canvas&gt;.</p>
+    </canvas>
+    <script>
+        var myCanvas = document.getElementById("canvas");
+        var ctx = myCanvas.getContext("2d");
+
+        ctx.fillStyle = 'powderblue';
+        ctx.fillRect(0, 0, 1920, 540);
+        ctx.fillStyle = 'powdergreen';
+        ctx.fillRect(0, -540, 1920, -540);
+
+        function draw(startX, startY, len, angle, branchWidth) {
+        ctx.lineWidth = branchWidth;
+
+        ctx.beginPath();
+        ctx.save();
+        
+        ctx.strokeStyle = "lightbrown";
+        ctx.fillStyle = "darkred";
+
+        ctx.translate(startX, startY);
+        ctx.rotate(angle * 0.0155);
+        ctx.moveTo(0, 0);
+        ctx.lineTo(0, -len);
+        ctx.stroke();
+        if(len < 50) {
+        ctx.arc(8, 3, 7, 0, 10, true);
+        }
+        if(len < 15) {
+        ctx.lineTo(0, -len * 0.5);
+        ctx.stroke();
+        }
+        if(len < 10) {
+        ctx.lineTo(-len, 0);
+        ctx.stroke();
+        ctx.strokeStyle = "gold";
+        }
+
+        ctx.shadowBlur = 15;
+        ctx.shadowColor = "darkred";
+
+        if(len < 7) {
+            ctx.restore();
+            return;
+        }
+
+        draw(0, -len, len * 0.875, angle - 15, branchWidth * 0.775);
+        draw(0, -len, len * 0.675, angle + 25, branchWidth * 0.85);
+
+        ctx.restore();
+    }
+    draw(960, 750, 100, 0, 7) 
+
+    </script>
+    
+</body>
+</html>

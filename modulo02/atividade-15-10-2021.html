@@ -18,7 +18,7 @@
         width: 100vw;
         width: 100%;
         position: cover;
-        background: linear-gradient(to bottom, powderblue 0%, silver 50%, darkgreen 51%, lightgreen 100%);
+        background: linear-gradient(to bottom, powderblue 55%, silver 56%, darkgreen 58%, lightgreen 100%);
     }
 </style>
 
@@ -29,11 +29,6 @@
     <script>
         var myCanvas = document.getElementById("canvas");
         var ctx = myCanvas.getContext("2d");
-
-        ctx.fillStyle = 'powderblue';
-        ctx.fillRect(0, 0, 1920, 540);
-        ctx.fillStyle = 'powdergreen';
-        ctx.fillRect(0, -540, 1920, -540);
 
         function draw(startX, startY, len, angle, branchWidth) {
         ctx.lineWidth = branchWidth;

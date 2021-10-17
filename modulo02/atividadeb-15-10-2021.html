@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-br">
+
+   <head>
+    <meta charset="utf-8" />
+    <title>Atividade 15/10/2021</title>
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="Atividade 15/10/2021" />
+    <meta property="og:site_name" content="Atividade 15/10/2021">
+    <meta property="og:description" content="Aprendendo como usar Canvas.">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/atividadeb-15-10-2021.html" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Well-lleW/my_first_steps/main/arquivos/b15-10-2021.png" />
+   </head>
+   <style>
+        body {
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        }
+
+        canvas {
+            width: 100vw;
+            width: 100%;
+        }
+    </style>
+    <body>
+      
+        <canvas id="canvas1"></canvas>
+
+        <script src="script.js"> </script>
+
+        <script>
+            const canvas = document.getElementById('canvas1');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            let centralx = canvas.width/2;
+            let centraly = canvas.height/2;
+            let positionX = centralx*.9;
+            let positionY = centraly*.9;
+            let angle = 0;
+            let rx = 0;
+            let ry = 0;
+            let xx = 0;
+            let xy = 0;
+            let yx = 0;
+            let yy = 0;
+            let lenx = 0;
+            let leny = 0;
+
+            function draw(){
+
+                ctx.lineWidth = 1.5;
+
+                    if(lenx < canvas.width){
+                    ctx.strokeStyle = "darkred";
+                    ctx.shadowColor = "darkred";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(lenx, 0);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "powderblue";
+                    ctx.shadowColor = "powderblue";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(canvas.width, leny);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "orange";
+                    ctx.shadowColor = "gold";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(canvas.width-lenx, canvas.height);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "white";
+                    ctx.shadowColor = "silver";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(0, canvas.height-leny);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    lenx += 3;
+                    leny = (lenx/canvas.width)*canvas.height;
+                    }
+                    if(lenx >= canvas.width && rx <= canvas.width){
+                    ctx.strokeStyle = "darkred";
+                    ctx.shadowColor = "darkred";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(canvas.width, ry);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "powderblue";
+                    ctx.shadowColor = "powderblue";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(canvas.width-rx, canvas.height);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "orange";
+                    ctx.shadowColor = "gold";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(0, canvas.height-ry);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "white";
+                    ctx.shadowColor = "silver";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(rx, 0);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    rx += 3;
+                    ry = (rx/canvas.width)*canvas.height;
+                    }
+                    if(rx >= canvas.width && yx <= canvas.width){
+                    ctx.strokeStyle = "darkred";
+                    ctx.shadowColor = "darkred";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(canvas.width-yx, canvas.height);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "powderblue";
+                    ctx.shadowColor = "powderblue";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(0, canvas.height-yy);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "orange";
+                    ctx.shadowColor = "gold";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(yx, 0);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "white";
+                    ctx.shadowColor = "silver";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(canvas.width, yy);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    yx += 3;
+                    yy = (yx/canvas.width)*canvas.height;
+                    }
+                    if(yx >= canvas.width && xx <= canvas.width){
+                    ctx.strokeStyle = "darkred";
+                    ctx.shadowColor = "darkred";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(0, canvas.height-xy);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "powderblue";
+                    ctx.shadowColor = "powderblue";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(xx, 0);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "orange";
+                    ctx.shadowColor = "gold";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(canvas.width, xy);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.strokeStyle = "white";
+                    ctx.shadowColor = "silver";
+                    ctx.shadowBlur = 15;
+                    ctx.beginPath();
+                    ctx.moveTo(positionX, positionY);
+                    ctx.lineTo(canvas.width-xx, canvas.height);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke();
+                    xx += 3;
+                    xy = (xx/canvas.width)*canvas.height;
+                    }
+                    
+                    if( xx >= canvas.width){
+                        rx = 0;
+                        ry = 0;
+                        xx = 0;
+                        xy = 0;
+                        yx = 0;
+                        yy = 0;
+                        lenx = 0;
+                        leny = 0;
+                    }
+                    ctx.restore();
+                    }
+
+            
+            function animate(){
+
+            positionX += 6*Math.sin(angle);
+            positionY += 6*Math.cos(angle);
+            angle += .085;
+
+            draw ();
+
+            requestAnimationFrame(animate);
+
+            }
+
+            animate();
+
+        </script>
+    
+    </body>
+            
+</html>

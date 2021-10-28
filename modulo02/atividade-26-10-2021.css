@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'RopaSansPro';
+  src: url("/arquivos/ropasanspro-regular-webfont.woff2") format('woff2');
+  src: url("/arquivos/ropasanspro-regular-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  background-color: #00ccff1a;;
+  font-family: 'RopaSansPro';
+}
+
+main {
+  min-width: 300px;
+  max-width: 750px;
+}
+
+p {
+  margin-left: 13px; 
+  color: hsl(0, 100%, 30%);
+  background-color: #abdbee;opacity:0.75;
+}
+
+p::first-line {
+  color: rgba(255, 0, 0, .7); 
+}
+
+b {
+  color: hsla(0, 32%, 13%, 0.75);
+}
+
+h1 {
+  writing-mode: vertical-rl;
+  background-color: #80ced6;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+#hor {
+  writing-mode: horizontal-tb;
+  background-color: #80ced6;
+  color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+}
+
+fieldset {
+  border: 1px dashed black;
+}
+
+legend {
+  text-decoration: solid underline;
+  font-weight: 900;
+  font-size: 1.15em;
+}
+
+table,
+th,
+td {
+  border: 1px double black;
+  margin-top: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+table {
+  margin-left: 15%;
+  max-width: 750px;
+  min-width: 375px;
+}
+
+tr:hover, li:hover {
+  background-color: #D6EEEE;
+}
+
+img {
+  max-width: 375px;
+  height: auto;
+  padding-left: 17%;
+}
+
+figure {
+  padding: 5px 0 0px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: #54c9c9;
+  color: white;
+  font-style: bolder;
+  padding: 3px;
+  margin: 15px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+a:link {
+  color: darkred;  
+}
+a:visited {
+  color: green;
+}
+a:focus {
+  color: plum;
+  border-bottom: 2px dotted purple ;
+}
+
+a:hover {
+  color: red;
+  border-bottom: 2px dotted red ;
+}
+
+a:active {
+  font-size: 2em;
+  color: gold;
+}
+
+li {
+  list-style: square url(/arquivos/ul.svg);
+  font-size: 1.25em;
+}
+
+@media (min-width: 900px) {
+  img {
+    padding-left: auto;
+  }
+  table {
+    padding-left: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  img {
+    padding-left: auto;
+  }
+  table {
+    padding-left: auto;
+  }
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 725px) {
+  img {
+    padding-left: auto;
+    max-width: 300px;
+  }
+  table {
+    padding-left: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,7 +1,7 @@
 /*@font-face {
   font-family: 'RopaSansPro';
-  src: url("/arquivos/ropasanspro-regular-webfont.woff2") format('woff2');
-  src: url("/arquivos/ropasanspro-regular-webfont.woff") format('woff');
+  src: url("/my_first_steps/arquivos/ropasanspro-regular-webfont.woff2") format('woff2');
+  src: url("/my_first_steps/arquivos/ropasanspro-regular-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 } */
@@ -118,7 +118,7 @@ a:active {
 }
 
 li {
-  list-style: square url(/arquivos/ul.svg);
+  list-style: square url(/my_first_steps/arquivos/ul.svg);
   font-size: 1.25em;
 }
 

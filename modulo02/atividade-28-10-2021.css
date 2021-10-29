@@ -1,0 +1,47 @@
+body{
+  background-color: rgba(255, 228, 196, 0.582);
+}
+
+fieldset {
+  border: 2px dotted #2B364A;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #2B364A;
+}
+
+main {
+  height: 98vh;
+  width: 98vw;
+  margin: auto;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box>* {
+  margin: auto;
+}
+
+img {
+  max-width: 22vw;
+}
+
+@media (max-width: 900px) {
+
+  main>*{
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  img {
+    max-width: 40vw;
+  }
+}

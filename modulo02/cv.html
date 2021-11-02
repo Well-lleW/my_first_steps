@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Atividade cv</title>
+        <meta property="og:locale" content="pt-br">
+        <meta property="og:title" content="Atividade cv" />
+        <meta property="og:site_name" content="Atividade cv">
+        <meta property="og:description" content="cv.">
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/cv.html" />
+        <link rel="stylesheet" href="cv.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+        <article>
+            
+            <div id="main">
+                <figure>
+                    <img src="/my_first_steps/arquivos/Zoe/well.jpg" alt="Foto de Well">
+                </figure>
+                <h2>Wellington Ramos</h2>
+                <p>Um aspirante a desenvolvedor na instituição AlphaEdtech e graduando de administração na UFRGS. Sou apaixonado por tecnologia, mmorpg, esportes e animais.</p>
+            </div>
+            <div id="links">
+                <a href="https://www.linkedin.com/in/wellington-ramos-7b0440123/" target="_blank"><img class="links" src="/my_first_steps/arquivos/in.svg" alt="Link do LinkedIn"></a>
+                <a href="https://www.instagram.com/_wellew/" target="_blank"><img class="links" src="/my_first_steps/arquivos/insta.svg" alt="Link do Instagram"></a>
+                <a href="https://github.com/Well-lleW" target="_blank"><img class="links" src="/my_first_steps/arquivos/git.svg" alt="Link do GitHub"></a>
+            </div>
+        </article> 
+        <section>
+        <div id="button">
+            <p id="bexp">About me</p>
+            <p id="bhab">Contact</p>
+        </div>
+        <div id="exp" >
+            <h4>Educação</h4>
+            <p>Aspirante a desenvolvedor - Alpha Edtech - 2023/1 (fim).</p>
+            <p>Bacharelado Administração - Universidade Federal do Rio Grande do Sul - 9º Semestre - 2022/2 (fim).</p>
+            <h4>Resumo Profissional</h4>
+            <p>
+                Aspirante a desenvolvedor na Instituição Alpha Edtech e estudante de administração de empresas na Universidade Federal do Rio Grande do Sul, com mais de 5 anos de experiência profissional. 
+                Com experiência em atendimento ao cliente, gerenciamento de operações e planejamento de projeto. Sempre disposto a ajudar meus colegas, pretendo poder fazer parte de sua empresa e poder continuar com meu desenvolvimento e ser um diferencial para a empresa.
+            </p>
+            <h4>Informações Adicionais:</h4>
+            <ul>
+                <li>HTML - Iniciante</li>
+                <li>CSS - Iniciante</li>
+                <li>Excel - Avançado</li>
+                <li>Pacote Office - Intermediário</li>
+                <li>Inglês - Avançado</li>
+            </ul>
+
+            
+            <p>Estágio (Administração) - JFRS - (RH)</p>
+            <ul>
+                <li>Elaborar propostas de contrato ou contrapropostas para negociação coletiva ou outras negociações trabalhistas. </li>
+                <li>Monitorar a adesão da empresa ou da força de trabalho aos acordos trabalhistas. Revisar as práticas do empregador ou os dados do funcionário para garantir o cumprimento de contratos em questões como salários, horas ou condições de emprego.</li>
+                <li>Servir de elo entre gerência e empregados por lidar com questões, interpretar e administrar contratos e ajudar a resolver problemas relacionados ao trabalho.</li>
+            </ul>
+
+            <p>Estágio (Administração) - MPTRS - (RH)</p>
+            <ul>
+                <li>Preparar relatórios, como organização de trabalho e gráficos de fluxo, e relatórios de percurso de carreira, para resumir a análise de avaliação e análise de compensação.</li>
+                <li>Servir de elo entre gerência e empregados para lidar com questões, interpretar e administrar contratos e ajudar a resolver problemas relacionados ao trabalho.</li>
+                <li>Reunir e organizar informações sobre problemas ou procedimentos</li>
+                <li>Elaborar manuais e capacitar trabalhadores no uso de novos formulários, relatórios, procedimentos ou equipamentos, de acordo com a política organizacional.</li>
+                
+            </ul>
+        </div>
+        <div id="hab" hidden>
+            <div id="contact">
+                <div>
+                    <h2>Contato</h2>
+                    <h4>Telefone</h4>
+                    <p>+55 (51) 99361-1661</p>
+                    <h4>E-mail</h4>
+                    <p>wellew_@outlook.com</p>
+                </div>
+                <div>
+                    <form method="get">
+                        <p><label>Nome: <input id="input1" name=nome> </label></p>
+                        <p><label>E-mail: <input id="input2" name=email> </label></p>
+                        <p><label for="mensagem">Mensagem:</label>
+                        <p><input id="msg" name=mensagem type=text></label></p>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        </section>
+        
+        </main> 
+
+        <script>
+            var x = document.getElementById("exp");
+            var y = document.getElementById("hab");
+            document.getElementById("bexp").addEventListener("click", myFunctionExp);
+            document.getElementById("bhab").addEventListener("click", myFunctionHab);
+            function myFunctionExp() {
+                if (x.hidden === true) {
+                    x.hidden = false
+                    y.hidden = true
+                }else {
+                    x.hidden = true
+                }
+            }
+            function myFunctionHab() {
+                if (y.hidden === true) {
+                    y.hidden = false
+                    x.hidden = true
+                }else {
+                    y.hidden = true
+                }
+            }
+        </script>
+        
+        </body>
+
+</html>

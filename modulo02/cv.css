@@ -245,7 +245,7 @@ button:hover {
     article {
     
         width: 85vw;
-        height: 50vh;
+        height: 30vh;
     }
     #exp {
         height: 45vh;
@@ -264,15 +264,15 @@ button:hover {
         height: 3.3vh;
     }
     #input1 {
-        width: 35vw;
+        width: 38vw;
     }
     
     #input2 {
-        width: 35vw;
+        width: 38vw;
     }
     
     #msg {
-        width: 35vw;
+        width: 38vw;
         height: 5vh;
     }
     figure {

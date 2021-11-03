@@ -208,15 +208,12 @@ button:hover {
     section {
         width: 33vw;
         height: 95vh;
-        background-color: #fefeff;
     }
     
     article {
     
         width: 33vw;
         height: 95vh;
-        color: #090d13;
-        background-color: #d1d8e4;   
     }
     body {
         margin-top: 3.5vh;
@@ -227,5 +224,65 @@ button:hover {
     #links {
         margin-top: 2.5vh;
         margin-left: 3vw;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        margin-left: 5vw;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    section {
+        width: 85vw;
+        height: 45vh;
+    }
+    
+    article {
+    
+        width: 85vw;
+        height: 50vh;
+    }
+    #exp {
+        height: 45vh;
+        width: 80vw;
+    }
+    #hab {
+        height: 45vh;
+        width: 85vw;
+    }
+    #contact > div {
+        width: 50vw;
+        margin-left: 1vw;
+    }
+    button {
+        width: 25vw;
+        height: 3.3vh;
+    }
+    #input1 {
+        width: 33vw;
+    }
+    
+    #input2 {
+        width: 33vw;
+    }
+    
+    #msg {
+        width: 33vw;
+        height: 5vh;
+    }
+    figure {
+        margin: 0;
+        width: 85vw;
+        padding-top: 7.5vh;
+        padding-bottom: 5vh;
+        text-align: center;
+    }
+    article > #main > p, article > #main > h2 {
+        width: 55vw;
+        margin-left: 10vw;
     }
 }

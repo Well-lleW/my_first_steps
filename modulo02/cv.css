@@ -230,6 +230,7 @@ button:hover {
 
 @media (max-width: 1000px) {
     body {
+        margin-top: 0.5vh;
         margin-left: 5vw;
     }
     main {
@@ -250,10 +251,12 @@ button:hover {
     #exp {
         height: 45vh;
         width: 80vw;
+        padding: 10px 0;
     }
     #hab {
         height: 45vh;
         width: 85vw;
+        padding: 20px 0;
     }
     #contact > div {
         width: 50vw;
@@ -289,5 +292,9 @@ button:hover {
     article > #main > p, article > #main > h2 {
         width: 55vw;
         margin-left: 10vw;
+    }
+    #links {
+        margin-top: 2vh;
+        text-align: left;
     }
 }

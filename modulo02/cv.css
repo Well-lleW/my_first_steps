@@ -124,6 +124,7 @@ img {
     margin: 0;
     margin-top: .5vh;
     background-color: #fefeff;
+    overflow: auto;
 }
 
 #contact {
@@ -227,7 +228,7 @@ button:hover {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     body {
         margin-left: 5vw;
     }
@@ -263,15 +264,15 @@ button:hover {
         height: 3.3vh;
     }
     #input1 {
-        width: 33vw;
+        width: 35vw;
     }
     
     #input2 {
-        width: 33vw;
+        width: 35vw;
     }
     
     #msg {
-        width: 33vw;
+        width: 35vw;
         height: 5vh;
     }
     figure {
@@ -280,6 +281,10 @@ button:hover {
         padding-top: 7.5vh;
         padding-bottom: 5vh;
         text-align: center;
+    }
+    img {
+        width: 150px;
+        height: 150px;
     }
     article > #main > p, article > #main > h2 {
         width: 55vw;

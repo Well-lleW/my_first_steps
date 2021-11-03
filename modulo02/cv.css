@@ -1,6 +1,6 @@
 body {
     background-color: #fefeff;
-    margin-top: 7.5vh;
+    margin-top: 5.5vh;
     color: #29374D;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
@@ -13,23 +13,24 @@ main {
 }
 
 section {
-    width: 33vw;
-    height: 85vh;
+    width: 45vw;
+    height: 65vh;
     background-color: #fefeff;
 }
 
 article {
 
-    width: 33vw;
-    height: 85vh;
+    width: 50vw;
+    height: 65vh;
     color: #090d13;
     background-color: #d1d8e4;
     
 }
 
 article > #main > p, article > #main > h2 {
-    width: 25vw;
-    margin-left: 2.5vw;
+    width: 47vw;
+    margin-left: .75vw;
+    text-align: justify;
 }
 
 #button > p {
@@ -48,13 +49,12 @@ article > #main > p, article > #main > h2 {
 }
 
 #button > p:hover {
-    width: 47vw;
-    height: 3.5vh;
+    width: 45vw;
+    height: 3.4vh;
 }
 
 #button {
     display: flex;
-    flex-direction: row;
     height: auto;
 }
 
@@ -64,7 +64,7 @@ article > #main > p, article > #main > h2 {
 }
 
 #main > p {
-    text-indent: 2em;
+    text-indent: 1.75em;
 }
 
 #main > h2 {
@@ -74,9 +74,9 @@ article > #main > p, article > #main > h2 {
 
 figure {
     margin: 0;
-    width: 33vw;
-    padding-top: 7.5vh;
-    padding-bottom: 5vh;
+    width: 50vw;
+    padding-top: 6.5vh;
+    padding-bottom: 3vh;
     text-align: center;
 }
 
@@ -85,32 +85,32 @@ img {
     background-position: center;
     background-size: auto;
     border-radius: 100%;
-    width: 250px;
-    height: 250px;
+    width: 125px;
+    height: 125px;
 }
 
 .links {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     border-radius: 0;
     margin-right: 5px;
 }
 
 .links:hover {
-    width: 40px;
-    height: 40px;
+    width: 33px;
+    height: 33px;
 }
 
 #links {
-    margin-top: 8vh;
-    margin-left: 4vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
     text-align: left;
 }
 
 #exp {
-    height: 75vh;
-    width: 31vw;
-    padding: 20px 15px;
+    height: 60vh;
+    width: 44vw;
+    padding: 0.1vw 0.2vh;
     text-align: justify;
     margin: 0;
     margin-top: .5vh;
@@ -118,26 +118,26 @@ img {
     overflow: auto;
 }
 #hab {
-    height: 45vh;
-    padding: 50px 0;
+    height: 65vh;
+    width: 40vw;
     text-align: left;
     margin: 0;
-    margin-top: .5vh;
+    margin-top: .2vh;
     background-color: #fefeff;
-    overflow: auto;
 }
 
 #contact {
+    margin-left: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #fefeff;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    height: 35vh;
-    margin-top: 2vh;
+    height: 60vh;
+    margin-top: .5vh;
 }
 
 div > form > p {
@@ -146,16 +146,15 @@ div > form > p {
 
 #form {
     display: flex;
-    flex-direction: row;
     align-items: flex-end;
 }
 
 #contact > div {
-    width: 22vw;
-    margin-left: 1vw;
+    width: 40vw;
 }
 
 #contact > div > p {
+    width: 40vw;
     margin-top: 0;
 
 }
@@ -171,22 +170,22 @@ input {
 }
 
 #input1 {
-    width: 18vw;
+    width: 40vw;
 }
 
 #input2 {
-    width: 18vw;
+    width: 40vw;
 }
 
 #msg {
-    width: 18vw;
+    width: 40vw;
     height: 5vh;
 }
 
 button {
     cursor: pointer;
     text-align: center;
-    width: 18.5vw;
+    width: 14.5vw;
     height: 3.3vh;
     font-size: .9em;
     color: #e4eeff;
@@ -197,92 +196,94 @@ button {
 }
 
 button:hover {
-    width: 18.6vw;
+    width: 15vw;
     height: 3.5vh;
 }
+@media (min-width: 900px) {
 
-@media (max-width: 1300px) {
-    #links {
-        margin-top: 2.5vh;
-        margin-left: 3vw;
-    }
-    section {
-        width: 33vw;
-        height: 95vh;
-    }
-    
-    article {
-    
-        width: 33vw;
-        height: 95vh;
-    }
     body {
-        margin-top: 3.5vh;
-    }
-}
-
-@media (max-width: 1075px) {
-    #links {
-        margin-top: 2.5vh;
-        margin-left: 3vw;
-    }
-}
-
-@media (max-width: 1000px) {
-    body {
-        margin-top: 0.5vh;
-        margin-left: 5vw;
+        margin-top: 10vh;
+        margin-left: vw;
     }
     main {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
     }
     section {
-        width: 85vw;
-        height: 45vh;
+        width: 40vw;
+        height: 70vh;
     }
     
     article {
-    
-        width: 85vw;
-        height: 30vh;
+        width: 30vw;
+        height: 72vh;
     }
     #exp {
-        height: 45vh;
-        width: 80vw;
-        padding: 10px 0;
+        height: 65vh;
+        width: 39.1vw;
+        padding: 1vh .4vw;
     }
     #hab {
-        height: 45vh;
-        width: 85vw;
-        padding: 20px 0;
+        height: 70vh;
+        width: 40vw;
+        padding: 1vh 0;
     }
+
+    #contact {
+        margin-left: .5vw;
+        display: flex;
+        flex-direction: row;
+        background-color: #fefeff;
+    }
+
     #contact > div {
-        width: 50vw;
-        margin-left: 1vw;
+        width: 40vw;
+        margin: 0;
+    }
+
+    #contact > div > p {
+        width: 19vw;
+        margin: 0;
+    
+    }
+    form {
+        width: 20vw;
     }
     button {
-        width: 25vw;
+        width: 10vw;
         height: 3.3vh;
     }
+    #button > p {
+        width: 20vw;
+        padding-top: .5vh;
+    }
+
+    #button > p:hover {
+        width: 20.2vw;
+    }
+
+    button:hover {
+        width: 10.2vw;
+    }
+
     #input1 {
-        width: 38vw;
+        width: 19vw;
     }
     
     #input2 {
-        width: 38vw;
+        width: 19vw;
     }
     
     #msg {
-        width: 38vw;
+        width: 19vw;
         height: 5vh;
     }
     figure {
         margin: 0;
-        width: 85vw;
-        padding-top: 2.5vh;
-        padding-bottom: 1.5vh;
+        width: 30vw;
+        padding-top: 6.5vh;
+        padding-bottom: 3.5vh;
         text-align: center;
     }
     img {
@@ -290,11 +291,12 @@ button:hover {
         height: 150px;
     }
     article > #main > p, article > #main > h2 {
-        width: 55vw;
-        margin-left: 10vw;
+        width: 25vw;
+        margin-left: 2vw;
     }
     #links {
-        margin-top: 2vh;
+        margin-top: 5vh;
         text-align: left;
     }
+
 }

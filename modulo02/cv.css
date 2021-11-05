@@ -117,6 +117,9 @@ img {
     background-color: #fefeff;
     overflow: auto;
 }
+#exp > p {
+    text-indent: 1.5em;
+}
 #hab {
     height: 65vh;
     width: 40vw;
@@ -199,6 +202,11 @@ button:hover {
     width: 15vw;
     height: 3.5vh;
 }
+
+a {
+    color: #29374D;
+}
+
 @media (min-width: 900px) {
 
     body {

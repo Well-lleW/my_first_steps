@@ -97,10 +97,15 @@ img {
 }
 
 #links {
-    margin-top: 5vh;
+    margin-top: 4vh;
     margin-left: 2vw;
     text-align: left;
 }
+
+
+/* #exp::-webkit-scrollbar {
+    display: none;
+  } */
 
 #exp {
     height: 60vh;
@@ -111,6 +116,8 @@ img {
     margin-top: .5vh;
     background-color: #fefeff;
     overflow: auto;
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
 }
 #exp > p {
     text-indent: 1.5em;
@@ -291,8 +298,8 @@ a {
     figure {
         margin: 0;
         width: 33vw;
-        padding-top: 3.5vh;
-        padding-bottom: 1.5vh;
+        padding-top: 6.5vh;
+        padding-bottom: 2.5vh;
         text-align: center;
     }
     img {

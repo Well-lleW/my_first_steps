@@ -8,8 +8,8 @@ body {
 
 main {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    hyphens: auto;
 }
 
 section {
@@ -27,7 +27,7 @@ article {
     
 }
 
-article > #main > p, article > #main > h2 {
+article > #main > p {
     width: 47vw;
     margin-left: .75vw;
     text-align: justify;
@@ -66,11 +66,6 @@ article > #main > p, article > #main > h2 {
 #main > p {
     text-indent: 1.75em;
 }
-
-#main > h2 {
-    text-align: right;
-    font-weight: 400;
-} 
 
 figure {
     margin: 0;
@@ -207,6 +202,11 @@ a {
     color: #29374D;
 }
 
+#main > h2 {
+    text-align: right;
+    font-weight: 400;
+} 
+
 @media (min-width: 900px) {
 
     body {
@@ -224,7 +224,7 @@ a {
     }
     
     article {
-        width: 30vw;
+        width: 35vw;
         height: 72vh;
     }
     #exp {
@@ -289,7 +289,7 @@ a {
     }
     figure {
         margin: 0;
-        width: 30vw;
+        width: 35vw;
         padding-top: 6.5vh;
         padding-bottom: 3.5vh;
         text-align: center;
@@ -299,7 +299,7 @@ a {
         height: 150px;
     }
     article > #main > p, article > #main > h2 {
-        width: 25vw;
+        width: 30vw;
         margin-left: 2vw;
     }
     #links {

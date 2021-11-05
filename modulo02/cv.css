@@ -28,8 +28,8 @@ article {
 }
 
 article > #main > p {
-    width: 47vw;
-    margin-left: .75vw;
+    width: 45vw;
+    margin-left: 1vw;
     text-align: justify;
 }
 
@@ -70,8 +70,8 @@ article > #main > p {
 figure {
     margin: 0;
     width: 50vw;
-    padding-top: 6.5vh;
-    padding-bottom: 3vh;
+    padding-top: 4.5vh;
+    padding-bottom: 2vh;
     text-align: center;
 }
 
@@ -80,8 +80,8 @@ img {
     background-position: center;
     background-size: auto;
     border-radius: 100%;
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
 }
 
 .links {
@@ -204,6 +204,7 @@ a {
 
 #main > h2 {
     text-align: right;
+    width: 45vw;
     font-weight: 400;
 } 
 
@@ -220,15 +221,15 @@ a {
     }
     section {
         width: 40vw;
-        height: 70vh;
+        height: 77vh;
     }
     
     article {
-        width: 35vw;
-        height: 72vh;
+        width: 33vw;
+        height: 77vh;
     }
     #exp {
-        height: 65vh;
+        height: 70vh;
         width: 39.1vw;
         padding: 1vh .4vw;
     }
@@ -289,18 +290,18 @@ a {
     }
     figure {
         margin: 0;
-        width: 35vw;
-        padding-top: 6.5vh;
-        padding-bottom: 3.5vh;
+        width: 33vw;
+        padding-top: 3.5vh;
+        padding-bottom: 1.5vh;
         text-align: center;
     }
     img {
-        width: 150px;
-        height: 150px;
+        width: 225px;
+        height: 225px;
     }
     article > #main > p, article > #main > h2 {
-        width: 30vw;
-        margin-left: 2vw;
+        width: 29vw;
+        margin-left: 1vw;
     }
     #links {
         margin-top: 5vh;

@@ -1,0 +1,365 @@
+@font-face {
+    font-family: "DIN-Next-W01-Light";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix") format("eot"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff") format("woff"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3516f91d-ac48-42cd-acfe-1be691152cc4.ttf") format("truetype"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d1b1e866-a411-42ba-8f75-72bf28e23694.svg#d1b1e866-a411-42ba-8f75-72bf28e23694") format("svg");
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Mr De Haviland";
+    src: local("Mr De Haviland Regular"), local("MrDeHaviland-Regular"), url("https://fonts.gstatic.com/s/mrdehaviland/v8/OpNVnooIhJj96FdB73296ksbOg3F60P3NilA.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nimbus-Sans-TW01Con";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2101adaa-6a98-4fa9-b085-3b04c3722637.eot?#iefix") format("eot"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8fb1090e-b4d0-4685-ac8f-3d0c29d60130.woff") format("woff"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/5d5fc44e-e84b-48ca-a5a7-bed8bdbf79a1.ttf") format("truetype"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/24512b2a-e22d-4ebb-887c-a334d039433c.svg#24512b2a-e22d-4ebb-887c-a334d039433c") format("svg");
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Nimbus-Sans-TW01Con";
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8fb1090e-b4d0-4685-ac8f-3d0c29d60130.woff") format("woff");
+}
+
+body {
+    margin: 0;
+    background-color: #F1F5F2;
+    cursor: url(/arquivos/fatleg.svg), auto;
+}
+
+header {
+    height: 15vh;
+    min-height: 80px;
+    max-height: 90.4333px;
+    width: 100vw;
+    font-family: "Nimbus-Sans-TW01Con";
+    font-size: 18px;
+    position: fixed;
+    overflow: hidden;
+    background-color: #F1F5F2;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 5px;
+}
+
+li {
+    width: calc(100vw/9.5);
+    max-width: 155px;
+    height: 55px;
+    padding-top: 2.5vh;
+    border-top: 1px solid black;
+}
+
+li:hover,
+#activepage:hover {
+    padding-top: 2vh;
+    color: #E2705A;
+    border-top: 4px solid #E2705A;
+}
+
+#activepage {
+    padding-top: 2vh;
+    border-top: 4px solid black;
+}
+
+span {
+    padding-top: 1vh;
+    margin-left: .85vw;
+}
+
+svg {
+    width: 3vw;
+    max-width: 33px;
+    min-width: 25px;
+    height: auto;
+}
+
+section {
+    display: flex;
+    background-image: url("/arquivos/Wix/salame.webp");
+    height: 99.5vh;
+    width: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainbox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 721px;
+    height: 397.8px;
+    border: 3px solid black;
+}
+
+#mainbox>div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 721px;
+    padding: 0;
+    margin: 0;
+}
+
+#mainbox>div>img {
+    padding: 28px 28px;
+}
+
+#mainbox>div>p {
+    width: 268px;
+}
+
+#mainbox>span {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 721px;
+    height: 397.8px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid black;
+}
+
+#para {
+    font-family: "Mr De Haviland";
+    font-size: 90px;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+.bomcomer {
+    font-family: "Nimbus-Sans-TW01Con";
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+#comeceacomprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+#comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nimbus-Sans-TW01Con";
+    line-height: 32.2px;
+    color: #F1F5F2;
+    font-size: 23px;
+    height: 100px;
+    width: 268px;
+    margin: 0;
+    padding: 0;
+    border-left: 3px solid black;
+    background-color: black;
+}
+
+#comprar:hover {
+    background-color: transparent;
+    color: black;
+}
+
+#salgados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 268px;
+    padding-top: 0;
+    font-family: "Nimbus-Sans-TW01Con";
+    font-size: 23px;
+    border-right: 3px solid black;
+}
+
+#outerborder {
+    background-color: #f1f5f2bd;
+    border: 15px solid;
+    border-color: #f1f5f200;
+}
+
+#blank {
+    height: 33px;
+}
+
+#secondpart {
+    font-family: "Nimbus-Sans-TW01Con";
+    font-size: 24px;
+    letter-spacing: 0.3em;
+    height: 0vh;
+    width: 100vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#secondarticle {
+    height: 85vh;
+}
+
+#secondpart>p {
+    padding-top: 4vh;
+    text-align: center;
+}
+
+#items {
+    background: unset;
+}
+
+#items>div {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#items>div>div>p {
+    text-align: center;
+    font-family: "Nimbus-Sans-TW01Con";
+    font-size: 23px;
+    line-height: 1.4;
+    letter-spacing: unset;
+    display: flex;
+    flex-flow: column;
+}
+
+#items>div>div>p>span {
+    text-align: center;
+    font-family: "Nimbus-Sans-TW01Con";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: unset;
+    display: flex;
+    flex-flow: column;
+}
+
+#queijo2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 316px;
+    height: 103px;
+    background-color: #333333;
+    color: #F1F5F2;
+    padding: .25vw .25vw;
+}
+
+#queijo2>p {
+    border: 1px solid #F1F5F2;
+    text-align: center;
+    padding-top: 12px;
+    width: 70%;
+    height: 30%;
+    transition: ease;
+}
+
+#bacon2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 316px;
+    height: 103px;
+    background-color: #333333;
+    color: #F1F5F2;
+    padding: .25vw .25vw;
+}
+
+#bacon2>p {
+    border: 1px solid #F1F5F2;
+    text-align: center;
+    padding-top: 12px;
+    width: 70%;
+    height: 30%;
+    transition: ease;
+}
+
+#olive2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 316px;
+    height: 103px;
+    background-color: #333333;
+    color: #F1F5F2;
+    padding: .25vw .25vw;
+}
+
+#olive2>p {
+    border: 1px solid #F1F5F2;
+    text-align: center;
+    padding-top: 12px;
+    width: 70%;
+    height: 30%;
+    transition: ease;
+}
+
+.products {
+    height: 407px;
+    width: 316px;
+    padding: .25vw .25vw;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    max-height: 144px;
+    width: 100vw;
+    text-align: center;
+    font-family: "DIN-Next-W01-Light";
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
+    font-size: 12px;
+}
+
+#chat {
+    position: fixed;
+    background-position-x: center;
+    width: 64px;
+    height: 64px;
+    align-self: flex-end;
+    background-color: #608E6A;
+    bottom: 15px;
+    right: 15px;
+    border: none;
+    cursor: url(/arquivos/fatleg.svg), auto;
+}
+
+#chat:hover {
+    width: 66px;
+    height: 66px;
+}
+
+footer>div>p {
+    padding: .35vh;
+    margin: 0;
+}

@@ -27,7 +27,7 @@
 body {
     margin: 0;
     background-color: #F1F5F2;
-    cursor: url(/arquivos/fatleg.svg), auto;
+    cursor: url(/my_first_steps/arquivos/fatleg.svg), auto;
 }
 
 header {
@@ -90,7 +90,7 @@ svg {
 
 section {
     display: flex;
-    background-image: url("/arquivos/Wix/salame.webp");
+    background-image: url("/my_first_steps/arquivos/Wix/salame.webp");
     height: 99.5vh;
     width: auto;
     background-size: cover;
@@ -351,7 +351,7 @@ footer {
     bottom: 15px;
     right: 15px;
     border: none;
-    cursor: url(/arquivos/fatleg.svg), auto;
+    cursor: url(/my_first_steps/arquivos/fatleg.svg), auto;
 }
 
 #chat:hover {

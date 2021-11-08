@@ -97,6 +97,30 @@
                     fill="white" fill-rule="nonzero"></path>
             </svg>
         </button>
+        <div id="chatbox">
+            <div id="chatheader">
+                <h2>Vamos conversar por chat!</h2>
+                <span>Responderemos assim que possível</span>
+            </div>
+            <div id="msgbox"></div>
+            <div id="writebox">
+                <span>Digite sua mensagem</span>
+                <div id="writebox2">
+
+                    <svg id="smile" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M10,0a10,10,0,1,0,9.85,8.26A10,10,0,0,0,10,0Zm0,19A9,9,0,1,1,18.87,8.44,9.11,9.11,0,0,1,19,10,9,9,0,0,1,10,19Zm4.23-6.88a4.5,4.5,0,0,1-8.72,0l1-.25a3.5,3.5,0,0,0,6.78,0ZM8,8A1,1,0,1,1,7,7,1,1,0,0,1,8,8Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,14,8Z">
+                        </path>
+                    </svg>
+                    <svg id="anexo" viewBox="0 0 9 23" fill="currentColor">
+                        <path
+                            d="M4.5,23A4.5,4.5,0,0,1,0,18.5V4.5a4.5,4.5,0,0,1,9,0H8a3.5,3.5,0,0,0-7,0v14a3.5,3.5,0,0,0,7,0v-9a1.5,1.5,0,0,0-3,0V17H4V9.5a2.5,2.5,0,0,1,5,0v9A4.5,4.5,0,0,1,4.5,23Z">
+                        </path>
+                    </svg>
+                    <span>Desenvolvido por<img id="ascend" src="/my_first_steps/arquivos/Wix/ascendbywix.svg"></span>
+                </div>
+            </div>
+        </div>
         <footer>
             <div>
                 <p>© 2023 por BOM PARA COMER. Orgulhosamente criado com Wix.com</p>
@@ -147,6 +171,21 @@
             } else {
                 x3.style.display = "none"
                 y3.style.display = "flex"
+            }
+        }
+
+        var x4 = document.getElementById("chat");
+        var y4 = document.getElementById("chatbox");
+        document.getElementById("chat").addEventListener("mouseenter", myFunctionChat);
+        document.getElementById("chatbox").addEventListener("mouseleave", myFunctionChat);
+
+        function myFunctionChat() {
+            if (x4.style.display === "none") {
+                x4.style.display = "block"
+                y4.style.display = "none"
+            } else {
+                x4.style.display = "none"
+                y4.style.display = "block"
             }
         }
     </script>

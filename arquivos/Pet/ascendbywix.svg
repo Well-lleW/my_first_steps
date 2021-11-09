@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 33" width="230" height="33">
+	<title>New Project</title>
+	<defs>
+		<image  width="230" height="33" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOYAAAAhAQMAAAD3SUX0AAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAARSURBVHicY2AYBaNgFAxPAAAD3gABCMyhUQAAAABJRU5ErkJggg=="/>
+		<image  width="230" height="33" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOYAAAAhBAMAAAA/qcqEAAAAAXNSR0IB2cksfwAAACRQTFRF/////s/R/6ap6/P/gLL/IHj/p8r//6apy9//YZ//Q4z/p8r/M/9qqwAAAAx0Uk5TAACeAP//mf8A////ZD1KPwAABJRJREFUeJzFVk1v4kgQ7d1GyHNbZf/AJHuYq7UwCHKKZBMNObutsU9IxBbDMReuliAocIoUjIDTSsEI/AP29219uG3D7Bw8IyV9gHZ3u169qlfVFoLGxdXVlfjF0VTKrXD8t4vx+OGPN8b8NB6PP74D5l9viwmhHY8v3wHz4T0wf1FE1TAhnQ+f3h7z8qIs3IaZT2VpXl7/7qki5t+A93shIsPeLIeZvRbO9fr9Znkb0Ww2m8j7Yqdl27dRNcwLiCvGl5/knVLK/8LGtjBPeS57Cayv0Jlamq6n8JRa7Ayc8pfTn8LkhHYUDi/KjKEDfVyf8xwdqCm1i/Fplzup1LYKJsPlmF2yoNY5DNuqJzx3wJkPgF1408x2KmJeUr18FJltD302hYwzW2ha4yuLeGbjBd4YqeqYLB8tIrDnTNqx8k1UIuQsIdMS6LtP9/BwIJ4Z0z0kAA/4aTVMZqgxr8n5kTqa4jOGuAH4YBro+5GQwNYxiaczaQGYw6TdRmNeERMzqUUEmM9CzLBYuhRhZOWgsr4KIgXqQp59CqrHQY9gJ66CmYEVmG5WnAklT0i1i8SCc4chjpCax854hExYQQVMlFADBmD+KThXu2EDOekqGbLFVQgjRobEHORGmODFK56aa0wJA/7Qcfk/eLjeSWFsj/i7YkOIOmGTeXsLcnGqAfJ0+ahPzKk15H1oZtv2QExv4YAdwaNJDVSG7WEIj0YIRx4LawTBBQJKOcHsFqcs5OlqnohJ0ahpzAUe6ndAcgsQv3hcizo0rKazeBmB5oNDjsF1GAndh8DyjzHPeZ5h+nZP/VNXluziwtwFL76Kx/180PQiAw9LVRo3IuurKCTjLLbHDY/+dzxvTmK7gBjFr7K7NxKUXdMxg9QRwev0ixFb12iyXsZ8IQ3cUzePjIy4eDIJ08plUOaJEXg50RBidl/FwpvS63VvEtu+2X0O1mLkxgfWqZ/SSKitwL0oJF4akdS1sr2dYEWQOltDLpJdrtsRV25eMwA2DNM+8N46GCYjHcbDZJLcAGbTpzyAhJwnGgEppx3aIksS/Ow5EitkgeUhR8db85TnnFNQ9IQF9EtoHLCAnOD/X0Ac+hFgGgmqCg0fOGLXdIN9S7CrBIgJ7vhDsz1CVjUqElGPEeCEJ3bllSm/qYKnbScWuIcvoP+2H8Ur3yRMdA8D+MyYdepoI7zGsMdGZO247FFfRxpeOLvT/bbgiT0elJqoUj5lANM5q0GAgszg6Ik8tnXdbPhlC9n69pbiZeRl1Ocbi26Pw1k+5fldhhr6DBsdL8pi7ZqPsIca2nf5dT8rCLwuD7mOXVG6s00OYdaGTnkWOyXMAJI/zzDnoLFrsBysjcTqAJcFa0PXoCtkoCtfUIj1XNPZn+uWBAdjU/SEzSY5FDxrkKwPoPpg3fRMI7lBnL3GXFBE+SNkT+RbpTk74E1O6tOjU7jjTbX32PswXxqz7g8EQVkj+OBZHMQsDAcasw33Bpif3SXU45HCbAufeg3ebvUSf0mHjTDEu0bCeX6xtz0OskU4B8v4ejv7YJX4P4tEq4HNpfH0H8wnVT3acAvUAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+	<use id="Background" href="#img2" x="0" y="0" />
+</svg>

@@ -1,0 +1,483 @@
+@font-face {
+    font-family: "Oswald-Normal";
+    src: url("//fonts.gstatic.com/s/oswald/v16/aBQVVQvnHeKhkWtMdHDrBA.eot?#iefix") format("eot"), url("//fonts.gstatic.com/s/oswald/v16/RqRF4AQrkUh3ft98NHH2mA.woff2") format("woff2"), url("//fonts.gstatic.com/s/oswald/v16/PyqsDANUgLi2UsdO-d4iZQ.woff") format("woff"), url("//fonts.gstatic.com/s/oswald/v16/AWM5wXtMJeRP-AcRTgT4qQ.ttf") format("truetype"), url("//fonts.gstatic.com/l/font?kit=fxOl0NmPFyuGF72xEC-uaw&skey=653237e53512d0de&v=v16#Oswald") format("svg");
+    font-weight: 700;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url("//fonts.gstatic.com/s/roboto/v18/3KAd02OzFSDbt78HTOt2og.eot?#iefix") format("eot"), url("//fonts.gstatic.com/s/roboto/v18/fIKu7GwZTy_12XzG_jt8eA.woff2") format("woff2"), url("//fonts.gstatic.com/s/roboto/v18/Xyjz-jNkfiYuJf8UC3Lizw.woff") format("woff"), url("//fonts.gstatic.com/s/roboto/v18/5M21SdFLkD52QavfmHs6cA.ttf") format("truetype"), url("//fonts.gstatic.com/l/font?kit=1w8PsahvVyy4URc6MP8jWQ&skey=a0a0114a1dcab3ac&v=v18#Roboto") format("svg");
+    font-weight: 700;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "HelveticaNeueW01-45Ligh";
+    src: url("Fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot"), url("Fonts/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"), url("Fonts/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"), url("Fonts/7816f72f-f47e-4715-8cd7-960e3723846a.svg#7816f72f-f47e-4715-8cd7-960e3723846a") format("svg");
+}
+
+@font-face {
+    font-family: "Oswald-ExtraLight";
+    src: url("//fonts.gstatic.com/s/oswald/v16/GwZ_PiN1Aind9Eyjp868E1tXRa8TVwTICgirnJhmVJw.woff2") format("woff2");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-width: 900px;
+}
+
+.roboto {
+    font-family: "Roboto-Thin";
+}
+
+.helvetica {
+    font-family: "HelveticaNeueW01-45Ligh";
+}
+
+.oswaldN {
+    font-family: "Oswald-Normal";
+}
+
+.oswaldL {
+    font-family: "Oswald-ExtraLight";
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 124px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #285A5B;
+    background-color: #FFFDFB;
+    z-index: 2;
+}
+
+#lewisFarm {
+    display: flex;
+    margin-left: 3vw;
+}
+
+#lewisFarm>h1 {
+    font-size: 27px;
+    letter-spacing: .05em;
+}
+
+#logo {
+    width: 86px;
+    height: 59px;
+}
+
+nav {
+    width: 40%;
+    min-width: 425px;
+    max-width: 500px;
+}
+
+nav>* {
+    display: flex;
+}
+
+ul {
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.liNav {
+    font-size: 15px;
+    line-height: 43px;
+    font-weight: 700;
+}
+
+.liNav:hover,
+#lewisFarm:hover,
+#login>p:hover,
+#imgLogin:hover,
+#imgCart:hover {
+    cursor: pointer;
+}
+
+#login {
+    display: flex;
+    height: 34px;
+    width: fit-content;
+    align-items: center;
+    margin-right: 3vw;
+    font-size: 17px;
+    line-height: 23.8px;
+    font-weight: 700;
+}
+
+#login>p {
+    margin: 0 70px 0 14px;
+}
+
+#imgLogin {
+    width: 24px;
+}
+
+#imgCart {
+    height: 28px;
+    align-self: flex-start;
+}
+
+#sectionOne {
+    display: flex;
+    background-image: url(/arquivos/Food/mainbackground01.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #FFFDFB;
+}
+
+#sectionOne>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+#sectionOneP1 {
+    width: 800px;
+    font-size: 22px;
+    letter-spacing: 3.3px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #FFFDFB;
+}
+
+#sectionOneP2 {
+    font-size: 100px;
+    letter-spacing: .05em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+#sectionOneP3 {
+    width: 800px;
+    font-size: 30px;
+    letter-spacing: .1em;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 24px;
+    border-top: 2px solid #FFFDFB;
+}
+
+#sectionTwo {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/arquivos/Food/mainbackground02.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#sectionTwoOne {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 365px;
+    height: 700px;
+    background-image: url(/arquivos/Food/main01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutUs,
+#visitUs {
+    width: 279px;
+    height: 171.8px;
+    background-color: #FFFDFB;
+    text-align: center;
+}
+
+#farm,
+#visit {
+    font-size: 30px;
+    letter-spacing: .05em;
+    font-weight: 700;
+    color: #285A5B;
+}
+
+#story,
+#address {
+    font-size: 17px;
+    line-height: 23.8px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #285A5B;
+}
+
+#story:hover,
+#address:hover,
+#orderToday {
+    cursor: pointer;
+}
+
+#sectionTwoTwo {
+    position: relative;
+    z-index: 1;
+    width: 365px;
+    height: 700px;
+    background-color: #ffb84d;
+    color: #285A5B;
+    text-align: center;
+    justify-content: center;
+}
+
+#freshTwoTwoDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 150px;
+}
+
+#imgQuality {
+    position: absolute;
+    z-index: 1;
+    top: 41px;
+    left: 175px;
+}
+
+#freshTitle {
+    font-size: 37px;
+    line-height: 51.8px;
+    letter-spacing: .1em;
+    font-weight: 700;
+}
+
+#freshText {
+    width: 267px;
+    font-size: 17px;
+    line-height: 30.6px;
+    letter-spacing: .05em;
+    font-weight: 700;
+}
+
+#orderToday {
+    text-align: center;
+    width: 147px;
+    height: 55px;
+    font-size: 17px;
+    line-height: 23.8px;
+    font-weight: 700;
+    background-color: #285A5B;
+    color: #FFFDFB;
+    margin-top: 45px;
+}
+
+#sectionTwoThree {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 365px;
+    height: 700px;
+    background-image: url(/arquivos/Food/main02.webp);
+    background-size: cover;
+}
+
+#visitUs {
+    width: 279px;
+    height: 171.8px;
+}
+
+#sectionThree {
+    display: flex;
+    background-image: url(/arquivos/Food/mainbackground02.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: #285A5B;
+}
+
+#sectionThree>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#sectionThreeP1 {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+#sectionThreeP2 {
+    width: 695px;
+    font-size: 17px;
+    line-height: 30.6px;
+    letter-spacing: .05em;
+    font-weight: 700;
+}
+
+#imgChicken {
+    height: 105px;
+}
+
+ol {
+    width: 75px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 65px;
+    justify-content: space-between;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+#sectionFour {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/arquivos/Food/mainbackground02.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#sectionFour>div {
+    width: 80%;
+    min-width: 905px;
+    max-width: 1180px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#sectionFourP1 {
+    font-size: 37px;
+    font-weight: 700;
+    color: #285A5B;
+    margin: 0;
+}
+
+#sectionFourP2 {
+    font-size: 22px;
+    line-height: 26.4px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+    color: #285A5B;
+}
+
+.gallery {
+    width: calc(75%/4);
+    margin: 3vh 3vh 3vh 3vh;
+    transition: .5s ease-out;
+}
+
+#sectionFooter {
+    height: 30vh;
+    max-height: 265px;
+}
+
+#sectionDivFooter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+h2 {
+    font-size: 22px;
+    letter-spacing: .15em;
+    font-weight: 700;
+    color: #285A5B;
+    margin-top: 0;
+}
+
+.footerRoboto {
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: .75px;
+    font-weight: 700;
+    color: #285A5B;
+    margin: 0;
+}
+
+.socialMedia {
+    width: 27px;
+    height: 27px;
+}
+
+#chat {
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    background-color: #285A5B;
+    border-radius: 25%;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+}
+
+#svgChat {
+    width: 28px;
+    height: 28px;
+}
+
+.gallery:hover {
+    opacity: .4;
+}
+
+.socialMedia:hover,
+#chat:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 935px) {
+    nav {
+        order: 1;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 775px) {
+    nav {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    #login {
+        margin-right: 1vw;
+    }
+    #login>p {
+        margin: 0 10px 0 7px;
+    }
+    nav {
+        margin-left: 2%;
+    }
+}

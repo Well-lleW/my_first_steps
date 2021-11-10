@@ -90,14 +90,30 @@
             <p id="sectionFourP1" class="oswaldN">FOLLOW US ON INSTAGRAM</p>
             <p id="sectionFourP2" class="roboto">#lewischickenfarm</p>
             <div>
-                <img class="gallery" src="/my_first_steps/arquivos/Food/1.webp" alt="Photo">
-                <img class="gallery" src="/my_first_steps/arquivos/Food/2.webp" alt="Photo">
-                <img class="gallery" src="/my_first_steps/arquivos/Food/3.webp" alt="Photo">
-                <img class="gallery" src="/my_first_steps/arquivos/Food/4.webp" alt="Photo">
-                <img class="gallery" src="/my_first_steps/arquivos/Food/5.webp" alt="Photo">
-                <img class="gallery" src="/my_first_steps/arquivos/Food/6.webp" alt="Photo">
-                <img class="gallery" src="/my_first_steps/arquivos/Food/7.webp" alt="Photo">
-                <img class="gallery" src="/my_first_steps/arquivos/Food/8.webp" alt="Photo">
+                <a class="gallery" id="gallery1" href="/my_first_steps/arquivos/Food/1.webp">
+                    <p class="galleryP">@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</p>
+                </a>
+                <a class="gallery" id="gallery2" href="/my_first_steps/arquivos/Food/2.webp">
+                    <p class="galleryP">@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</p>
+                </a>
+                <a class="gallery" id="gallery3" href="/my_first_steps/arquivos/Food/3.webp">
+                    <p class="galleryP">@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</p>
+                </a>
+                <a class="gallery" id="gallery4" href="/my_first_steps/arquivos/Food/4.webp">
+                    <p class="galleryP">@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</p>
+                </a>
+                <a class="gallery" id="gallery5" href="/my_first_steps/arquivos/Food/5.webp">
+                    <p class="galleryP">@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</p>
+                </a>
+                <a class="gallery" id="gallery6" href="/my_first_steps/arquivos/Food/6.webp">
+                    <p class="galleryP">@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</p>
+                </a>
+                <a class="gallery" id="gallery7" href="/my_first_steps/arquivos/Food/7.webp">
+                    <p class="galleryP">@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</p>
+                </a>
+                <a class="gallery" id="gallery8" href="/my_first_steps/arquivos/Food/8.webp">
+                    <p class="galleryP">@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com</p>
+                </a>
             </div>
         </section>
     </main>
@@ -133,6 +149,48 @@
             </svg>
         </button>
     </footer>
+
+    <div id="chatBox">
+        <div id="chatHeader">
+            <h2 class="oswaldN">Vamos conversar por chat!</h2>
+            <span class="roboto">Responderemos assim que possível</span>
+        </div>
+        <div id="msgBox"></div>
+        <div id="writeBox">
+            <span class="roboto">Digite sua mensagem</span>
+            <div id="writeBox2">
+
+                <svg id="smile" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                        d="M10,0a10,10,0,1,0,9.85,8.26A10,10,0,0,0,10,0Zm0,19A9,9,0,1,1,18.87,8.44,9.11,9.11,0,0,1,19,10,9,9,0,0,1,10,19Zm4.23-6.88a4.5,4.5,0,0,1-8.72,0l1-.25a3.5,3.5,0,0,0,6.78,0ZM8,8A1,1,0,1,1,7,7,1,1,0,0,1,8,8Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,14,8Z">
+                    </path>
+                </svg>
+                <svg id="annex" viewBox="0 0 9 23" fill="currentColor">
+                    <path
+                        d="M4.5,23A4.5,4.5,0,0,1,0,18.5V4.5a4.5,4.5,0,0,1,9,0H8a3.5,3.5,0,0,0-7,0v14a3.5,3.5,0,0,0,7,0v-9a1.5,1.5,0,0,0-3,0V17H4V9.5a2.5,2.5,0,0,1,5,0v9A4.5,4.5,0,0,1,4.5,23Z">
+                    </path>
+                </svg>
+                <span class="roboto">DESENVOLVIDO POR<img id="ascend" src="/my_first_steps/arquivos/Food/ascendbywix.svg"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("chat");
+        var y = document.getElementById("chatBox");
+        document.getElementById("chat").addEventListener("mouseenter", myFunctionChat);
+        document.getElementById("chatBox").addEventListener("mouseleave", myFunctionChat);
+
+        function myFunctionChat() {
+            if (x.style.display === "none") {
+                x.style.display = "block"
+                y.style.display = "none"
+            } else {
+                x.style.display = "none"
+                y.style.display = "block"
+            }
+        }
+    </script>
 
 </body>
 

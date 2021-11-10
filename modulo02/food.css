@@ -62,11 +62,13 @@ header {
 #lewisFarm {
     display: flex;
     margin-left: 3vw;
+    transition: .2s;
 }
 
 #lewisFarm>h1 {
     font-size: 27px;
     letter-spacing: .05em;
+    transition: .2s;
 }
 
 #logo {
@@ -95,6 +97,7 @@ ul {
     font-size: 15px;
     line-height: 43px;
     font-weight: 700;
+    transition: .2s;
 }
 
 .liNav:hover,
@@ -103,6 +106,8 @@ ul {
 #imgLogin:hover,
 #imgCart:hover {
     cursor: pointer;
+    color: #071414;
+    font-weight: bolder;
 }
 
 #login {
@@ -118,15 +123,18 @@ ul {
 
 #login>p {
     margin: 0 70px 0 14px;
+    transition: .2s;
 }
 
 #imgLogin {
     width: 24px;
+    transition: .2s;
 }
 
 #imgCart {
     height: 28px;
     align-self: flex-start;
+    transition: .2s;
 }
 
 #sectionOne {
@@ -211,6 +219,7 @@ ul {
     height: 171.8px;
     background-color: #FFFDFB;
     text-align: center;
+    transition: .4s;
 }
 
 #farm,
@@ -228,12 +237,19 @@ ul {
     font-weight: 700;
     text-decoration: underline;
     color: #285A5B;
+    transition: .3s;
 }
 
 #story:hover,
-#address:hover,
-#orderToday {
+#address:hover {
     cursor: pointer;
+    color: #519899;
+    opacity: .7;
+}
+
+#orderToday:hover {
+    cursor: pointer;
+    opacity: .75;
 }
 
 #sectionTwoTwo {
@@ -290,6 +306,7 @@ ul {
     background-color: #285A5B;
     color: #FFFDFB;
     margin-top: 45px;
+    transition: .3s;
 }
 
 #sectionTwoThree {
@@ -370,12 +387,15 @@ ol {
 }
 
 #sectionFour>div {
-    width: 80%;
-    min-width: 905px;
-    max-width: 1180px;
+    width: 85%;
+    min-width: calc(150px*4 + 8em);
+    max-width: calc(282px*4 + 8em);
+    height: calc(70vw/2 +4em);
+    max-height: 590px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    object-fit: contain;
 }
 
 #sectionFourP1 {
@@ -394,9 +414,94 @@ ol {
 }
 
 .gallery {
-    width: calc(75%/4);
-    margin: 3vh 3vh 3vh 3vh;
+    display: flex;
+    width: calc(70vw/4);
+    height: calc(70vw/4);
+    min-width: 150px;
+    max-width: 250px;
+    min-height: 150px;
+    max-height: 250px;
+    margin: 1em 1em 1em 1em;
     transition: .5s ease-out;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery1 {
+    background-image: url(/my_first_steps/arquivos/Food/1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease-out;
+}
+
+#gallery2 {
+    background-image: url(/my_first_steps/arquivos/Food/2.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease-out;
+}
+
+#gallery3 {
+    background-image: url(/my_first_steps/arquivos/Food/3.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease-out;
+}
+
+#gallery4 {
+    background-image: url(/my_first_steps/arquivos/Food/4.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease-out;
+}
+
+#gallery5 {
+    background-image: url(/my_first_steps/arquivos/Food/5.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease-out;
+}
+
+#gallery6 {
+    background-image: url(/my_first_steps/arquivos/Food/6.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease-out;
+}
+
+#gallery7 {
+    background-image: url(/my_first_steps/arquivos/Food/7.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease-out;
+}
+
+#gallery8 {
+    background-image: url(/my_first_steps/arquivos/Food/8.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s ease-out;
+}
+
+.galleryP {
+    opacity: 0;
+    height: 85%;
+    width: 100%;
+    font-family: "Roboto-Thin";
+    font-size: 19px;
+    text-align: center;
+    padding-top: 15%;
+    color: #FFFDFB;
+    background-color: #285a5b85;
+    transition: .7s5;
+}
+
+a {
+    text-decoration: unset;
+}
+
+.galleryP:hover {
+    opacity: 1;
 }
 
 #sectionFooter {
@@ -430,6 +535,7 @@ h2 {
 .socialMedia {
     width: 27px;
     height: 27px;
+    transition: .4s;
 }
 
 #chat {
@@ -441,6 +547,7 @@ h2 {
     bottom: 20px;
     right: 20px;
     border: none;
+    transition: .4s;
 }
 
 #svgChat {
@@ -448,13 +555,114 @@ h2 {
     height: 28px;
 }
 
-.gallery:hover {
-    opacity: .4;
+.socialMedia:hover {
+    cursor: pointer;
+    opacity: .7;
 }
 
-.socialMedia:hover,
 #chat:hover {
     cursor: pointer;
+    opacity: .8;
+}
+
+#chatBox {
+    position: fixed;
+    display: none;
+    width: 340px;
+    align-self: flex-end;
+    background-color: #285A5B;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 8px;
+    border: 1px solid #cbf1e936;
+}
+
+#chatHeader {
+    height: 80px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    color: #FFFDFB;
+    text-align: left;
+}
+
+#chatHeader>h2 {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    color: #FFFDFB;
+}
+
+#chatHeader>span {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.4;
+    padding: 0;
+    margin: 5px;
+}
+
+#msgBox {
+    width: 340px;
+    height: 320px;
+    background-color: #f1fffa;
+}
+
+#writeBox {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100px;
+    text-align: left;
+    justify-content: center;
+    color: #33333375;
+    padding-left: 10px;
+    align-content: center;
+    border-top: 1px solid #cbf1e936;
+    background-color: #ffff;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#writeBox2 {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 25px;
+    align-content: flex-end;
+    align-items: center;
+}
+
+#writeBox2>span {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10PX;
+    padding: 0;
+    margin: 0;
+    padding-left: 60px;
+}
+
+#smile {
+    height: 20px;
+}
+
+#annex {
+    margin-left: 15px;
+    height: 20px;
+    transform: rotate(45deg);
+}
+
+#ascend {
+    width: auto;
+    height: 12px;
+    margin-left: 5px;
 }
 
 @media (max-width: 935px) {

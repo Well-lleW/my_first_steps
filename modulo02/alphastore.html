@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="Alpha Store.">
+    <meta property="og:description" content="Resgate seus premios usando AlphaCoins!">
+    <link rel="stylesheet" href="/my_first_steps/modulo02/alphastore.css">
+</head>
+
+<body>
+
+
+
+    <script>
+        var x = document.getElementById("cartIcon");
+        var y = document.getElementById("cart");
+        document.getElementById("cartIcon").addEventListener("mouseenter", myFunctionChat);
+        document.getElementById("cart").addEventListener("mouseleave", myFunctionChat);
+
+        function myFunctionChat() {
+            if (x.style.display === "none") {
+                x.style.display = "block"
+                y.style.display = "none"
+            } else {
+                x.style.display = "none"
+                y.style.display = "block"
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -163,10 +163,12 @@ section {
   background-color: #f7f7f7;
   margin: 2em 2em 2em 2em;
   padding: 0;
+  overflow: hidden;
 }
 
 .bottons > img {
     padding-top: 1em;
+    overflow: hidden;
 }
 
 .bottons > h2 {
@@ -189,6 +191,7 @@ section {
   text-align: center;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 #priceTag{
@@ -410,6 +413,12 @@ div>a:hover{
   font-size: 23px;
 }
 
+.bottons>img:hover {
+  transform: scale(2.8);
+  position: relative;
+  top: -10px;
+  left: -40px;
+}
 #selected{
   color: #d7b333;
   font-weight: bold;

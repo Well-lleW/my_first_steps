@@ -15,11 +15,14 @@
 
 <body>
     <header>
-
+        <div>
         <img id="logo" src="/arquivos/AlphaStore/logo.svg" alt="Logo AlphaStore">
+        <div><a href="">categorias</a></div>
+        </div>
 
         <nav>
-            <div><a href="">meus pedidos</a></div><img id="userIcon" src="/arquivos/AlphaStore/userIcon.svg"
+            <div><a href="">pedidos</a></div><img id="navCart" src="/arquivos/AlphaStore/whitecart.svg"
+            alt="Seu carrinho"><img id="userIcon" src="/arquivos/AlphaStore/userIcon.svg"
                 alt="Sua conta">
         </nav>
 
@@ -31,15 +34,15 @@
                 <li id="ulTitle">categorias</li>
                 <li class="ulSubTitle">PRODUTOS</li>
                 <li class="liType1">camisetas</li>
-                <li class="liType1">bottons</li>
+                <li class="liType1" id="selected">bottons</li>
                 <li class="liType1">canecas</li>
                 <li class="liType1">chaveiros</li>
                 <li class="liType1">outros</li>
                 <li class="ulSubTitle">DESAFIOS</li>
-                <li>CSS</li>
-                <li>FIGMA</li>
-                <li>JAVASCRIPT</li>
-                <li>HTML</li>
+                <li class="liType2">CSS</li>
+                <li class="liType2">FIGMA</li>
+                <li class="liType2">JAVASCRIPT</li>
+                <li class="liType2">HTML</li>
             </ul>
 
             <div id="coins">
@@ -50,6 +53,54 @@
         </aside>
 
         <section>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="/arquivos/AlphaStore/kenjiBotton.svg" alt="kenjiBotton">
+                <h2>Kenji</h2>
+                <p>Animados?</p>
+                <span id="priceTag"><img class="cartCoin" src="/arquivos/AlphaStore/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="/arquivos/AlphaStore/whitecart.svg" alt=""></button>
+            </div>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="/arquivos/AlphaStore/adaBotton.svg" alt="adaBotton">
+                <h2>Ada</h2>
+                <p>Lovelace</p>
+                <span id="priceTag"><img class="cartCoin" src="/arquivos/AlphaStore/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="/arquivos/AlphaStore/whitecart.svg" alt=""></button>
+            </div>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="/arquivos/AlphaStore/lovelaveBotton.svg" alt="lovelaceBotton">
+                <h2>T2</h2>
+                <p>Turma Lovelace</p>
+                <span id="priceTag"><img class="cartCoin" src="/arquivos/AlphaStore/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="/arquivos/AlphaStore/whitecart.svg" alt=""></button>
+            </div>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="/arquivos/AlphaStore/kenjiBotton.svg" alt="kenjiBotton">
+                <h2>Kenji</h2>
+                <p>Animados?</p>
+                <span id="priceTag"><img class="cartCoin" src="/arquivos/AlphaStore/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="/arquivos/AlphaStore/whitecart.svg" alt=""></button>
+            </div>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="/arquivos/AlphaStore/kenjiBotton.svg" alt="kenjiBotton">
+                <h2>Kenji</h2>
+                <p>Animados?</p>
+                <span id="priceTag"><img class="cartCoin" src="/arquivos/AlphaStore/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="/arquivos/AlphaStore/whitecart.svg" alt=""></button>
+            </div>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="/arquivos/AlphaStore/kenjiBotton.svg" alt="kenjiBotton">
+                <h2>Kenji</h2>
+                <p>Animados?</p>
+                <span id="priceTag"><img class="cartCoin" src="/arquivos/AlphaStore/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="/arquivos/AlphaStore/whitecart.svg" alt=""></button>
+            </div>
             <div class="bottons">
                 <span id="spanBottonHeader">Bottons</span>
                 <img src="/arquivos/AlphaStore/kenjiBotton.svg" alt="kenjiBotton">
@@ -131,10 +182,10 @@
                 <button class="addCart"><img src="/arquivos/AlphaStore/whitecart.svg" alt=""></button>
             </div>
         </section>
-        <div>
+
         <aside id="cartSideBar">
 
-            <div id="cartHeader"><img src="/arquivos/AlphaStore/cartIcon.svg" alt="Carrinho" />meu carrinho</div>
+            <div id="cartHeader"><img id="myCart" src="/arquivos/AlphaStore/cartIcon.svg" alt="Carrinho" />meu carrinho</div>
             <div id="cartMain">
                 <div id="cartEmpty">
                     <p id="empty1">sua carrinho
@@ -167,7 +218,7 @@
             </div>
 
         </aside>
-    </div>
+
     </main>
 
 </body>

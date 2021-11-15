@@ -5,14 +5,18 @@
   --poppins: "Poppins", sans-serif;
 }
 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   font-family: var(--poppins);
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
   justify-content: space-between;
+  width: 100%;
 }
 
 header {
@@ -28,13 +32,24 @@ header {
   background: #2b364a;
   z-index: 1;
 }
+header>div{
+  display: flex;
+  color: #f7f7f7;
+  align-items: center;
+}
+header>div>div{
+  display: none;
+}
+
 main {
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
+  height: fit-content;
 }
 #logo{
     padding-left: 1em;
+    padding-right: 1.5em;
 }
 
 nav {
@@ -45,8 +60,17 @@ nav {
 }
 a {
   text-decoration: none;
-  margin-right: 1.5em;
   color: #f7f7f7;
+}
+
+nav>div>a{
+  margin-right: 1.5em;
+}
+
+#navCart{
+  display: none;
+  width: 35px;
+  padding-right: 1.5em;
 }
 
 #sideBar {
@@ -120,6 +144,7 @@ section {
   width: 60%;
   max-width: calc(100% - 550px - 175px);
   min-width: 510px;
+  height: fit-content;
   padding: .5em;
   justify-content: center;
 }
@@ -135,7 +160,7 @@ section {
   border: 3px solid #d7b333;
   border-radius: 5px;
   background-color: #f7f7f7;
-  margin: .5em .5em .5em .5em;
+  margin: 1.5em 1.5em 1.5em 1.5em;
   padding: 0;
 }
 
@@ -151,6 +176,7 @@ section {
 .bottons > p {
   margin: 0;
 }
+
 #spanBottonHeader {
   width: 124px;
   height: 27px;
@@ -163,19 +189,22 @@ section {
   margin: 0;
   padding: 0;
 }
+
 #priceTag{
     display: flex;
     width: 124px;
     align-items: center;
     justify-content: flex-end;
 }
+
 .addCart{
     width: 124px;
     height: 27px;
     background-color: #2B364A;
     border-radius: 5px;
-    margin-bottom: .75em;
+    margin-bottom: 1em;
 }
+
 #cartSideBar {
   display: flex;
   flex-direction: column;
@@ -194,6 +223,12 @@ section {
 #cartHeader {
   border-bottom: 1px solid #2b364a70;
   padding: 1em 0 1em 1em;
+  align-items: center;
+}
+
+#myCart{
+  padding-right: .5em;
+  vertical-align: text-bottom;
 }
 
 #cartMain {
@@ -204,24 +239,28 @@ section {
   justify-content: space-between;
   padding-top: 2em;
 }
+
 #cartEmpty {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
+
 #empty1 {
   width: 130px;
   font-size: 14px;
   text-align: center;
   margin: 0;
 }
+
 #empty2 {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   margin: 0;
 }
+
 #cartMain > p {
   margin: 0;
 }
@@ -232,17 +271,20 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 #cartBarMain > span {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #cartBarMain > span > p {
   margin: 0.1em;
   font-size: 14px;
   text-align: center;
   align-self: center;
 }
+
 #cartBar {
   height: 5px;
   width: 28vw;
@@ -252,6 +294,7 @@ section {
   margin: 0;
   border: 1px solid #2b364a83;
 }
+
 #subTotal {
   display: flex;
   flex-direction: row;
@@ -263,6 +306,7 @@ section {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+
 #subTotal > span,
 #subTotal > p {
   display: flex;
@@ -283,6 +327,7 @@ section {
   height: 25px;
   border-radius: 5px;
 }
+
 #add {
   width: 108px;
   height: 30px;
@@ -291,6 +336,7 @@ section {
   background-color: #2b364a;
   border-radius: 5px;
 }
+
 #total {
   display: flex;
   flex-direction: row;
@@ -314,6 +360,7 @@ section {
   justify-content: space-evenly;
   margin-top: 0.75em;
 }
+
 #clean {
   display: flex;
   width: 200px;
@@ -323,12 +370,14 @@ section {
   background-color: #e24b2d;
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 5px;
 }
 
 #trash {
   width: 18px;
   height: 18px;
 }
+
 #buy {
   display: flex;
   width: 200px;
@@ -338,6 +387,7 @@ section {
   background-color: #2b364a;
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 5px;
 }
 
 #ok {
@@ -348,4 +398,82 @@ section {
 .cartCoin {
   width: 20px;
   height: 20px;
+}
+
+#logo:hover, #navCart:hover, #userIcon:hover, .addCart:hover, #add:hover, #buy:hover, #clean:hover, .liType1:hover, .liType2:hover, #coins:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+div>a:hover{
+  font-size: 23px;
+}
+
+#selected{
+  color: #d7b333;
+  font-weight: bold;
+  transform: scale(1);
+}
+
+@media (max-width: 1320px){
+  #cartSideBar{
+    display: none;
+  }
+  #navCart{
+    display: block;
+  }
+
+  section {
+    width: 60%;
+    max-width: calc(100% - 175px);
+    margin-right: 10%;
+  }
+
+}
+
+@media (max-width: 1050px){
+  section {
+    width: 95%;
+    max-width: calc(100% - 175px);
+    margin-right: 0%;
+  }
+
+}
+
+@media (max-width: 800px){
+
+  header>div>div{
+    display: block;
+  }
+
+  #logo{
+    padding-right: .5em;
+  }
+
+  #cartSideBar{
+    display: none;
+  }
+  nav>div>a{
+    margin: .5em;
+  }
+
+  #navCart{
+    display: block;
+    padding-right: .65em;
+  }
+
+  #sideBar{
+    display: none;
+  }
+
+  section {
+    width: 100%;
+    max-width: calc(100%);
+    border: 1px solid red;
+  }
+
+  .bottons {
+  margin: .5em .5em .5em .5em;
+  padding: 0;
+}
 }

@@ -51,6 +51,7 @@ main {
 #logo{
     padding-left: 1em;
     padding-right: 1.5em;
+    transition: .3s;
 }
 
 nav {
@@ -62,6 +63,7 @@ nav {
 a {
   text-decoration: none;
   color: #f7f7f7;
+  transition: .3s;
 }
 
 nav>div>a{
@@ -72,6 +74,7 @@ nav>div>a{
   display: none;
   width: 35px;
   padding-right: 1.5em;
+  transition: .3s;
 }
 
 #sideBar {
@@ -103,6 +106,7 @@ ul {
 li {
   padding-top: 0.375em;
   font-size: 18px;
+  transition: .3s;
 }
 
 #ulTitle {
@@ -127,6 +131,7 @@ li {
   padding-top: 1.5em;
   font-size: 28px;
   margin: 0;
+  transition: .3s;
 }
 
 #coins > img {
@@ -207,6 +212,7 @@ section {
     background-color: #2B364A;
     border-radius: 5px;
     margin-bottom: 1em;
+    transition: .3s;
 }
 
 #cartSideBar {
@@ -339,6 +345,7 @@ section {
   color: #f7f7f7;
   background-color: #2b364a;
   border-radius: 5px;
+  transition: .3s;
 }
 
 #total {
@@ -375,6 +382,7 @@ section {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 5px;
+  transition: .3s;
 }
 
 #trash {
@@ -392,6 +400,7 @@ section {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 5px;
+  transition: .3s;
 }
 
 #ok {
@@ -403,7 +412,9 @@ section {
   width: 20px;
   height: 20px;
 }
-
+#userIcon{
+  transition: .3s;
+}
 #logo:hover, #navCart:hover, #userIcon:hover, .addCart:hover, #add:hover, #buy:hover, #clean:hover, .liType1:hover, .liType2:hover, #coins:hover{
   cursor: pointer;
   transform: scale(1.03);

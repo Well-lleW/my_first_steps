@@ -43,6 +43,7 @@ header>div>div{
 
 main {
   padding-top: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   height: fit-content;

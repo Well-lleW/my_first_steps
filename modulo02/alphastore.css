@@ -469,7 +469,6 @@ div>a:hover{
   section {
     width: 100%;
     max-width: calc(100%);
-    border: 1px solid red;
   }
 
   .bottons {

@@ -147,7 +147,7 @@ section {
   min-width: 510px;
   height: fit-content;
   padding: .5em;
-  justify-content: center;
+  padding-left: 7%;
 }
 
 .bottons {
@@ -161,7 +161,7 @@ section {
   border: 3px solid #d7b333;
   border-radius: 5px;
   background-color: #f7f7f7;
-  margin: 1.5em 1.5em 1.5em 1.5em;
+  margin: 2em 2em 2em 2em;
   padding: 0;
 }
 

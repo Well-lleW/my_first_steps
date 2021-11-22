@@ -1,6 +1,6 @@
 @font-face {
     font-family: "LaBamba";
-    src: url("/arquivos/mamonas/La\ Bamba\ Std\ Regular.otf");
+    src: url("./arquivos/mamonas/La\ Bamba\ Std\ Regular.otf");
   }
 
 body {
@@ -20,7 +20,7 @@ body {
     height: 100vh;
     width: 100%;
     display: flex;
-    background-image: url(/arquivos/mamonas/mamonas.jpg);
+    background-image: url(../arquivos/mamonas/mamonas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -51,7 +51,7 @@ h1 {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(/arquivos/mamonas/mamonaslogo.webp);
+    background-image: url(/../arquivos/mamonas/mamonaslogo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -81,7 +81,7 @@ p {
     height: 100vh;
     width: 100%;
     display: flex;
-    background-image: url(/arquivos/mamonas/mamonas3.jpg);
+    background-image: url(/./arquivos/mamonas/mamonas3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

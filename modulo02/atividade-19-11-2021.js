@@ -14,7 +14,7 @@ img1 = document.querySelector("#mainDivImg").appendChild(document.createElement(
 img2 = document.querySelector("#mainDivImg").appendChild(document.createElement("img"));
 img1.setAttribute("id", "img1");
 img2.setAttribute("id", "img2");
-document.querySelector("#img1").src = "/arquivos/mamonas/1.jpg"
+document.querySelector("#img1").src = "../arquivos/mamonas/1.jpg"
 document.querySelector("#img1").style.width = "30vw"
-document.querySelector("#img2").src = "/arquivos/mamonas/2.jpg"
+document.querySelector("#img2").src = "../arquivos/mamonas/2.jpg"
 document.querySelector("#img2").style.width = "30vw"

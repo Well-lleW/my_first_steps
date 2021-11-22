@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "LaBamba";
+    src: url("/arquivos/mamonas/La\ Bamba\ Std\ Regular.otf");
+  }
+
+body {
+    width: 100vw;
+    margin: 0;
+}
+
+.mainBackground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#mainDiv1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url(/arquivos/mamonas/mamonas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#mainDivH1{
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    height: 100%;
+    width: 100%;
+    color: #285A5B;
+    font-size: 5em;
+    font-family: "LaBamba";
+    letter-spacing: .15em;
+}
+
+h1 {
+    text-align: center;
+}
+
+#mainDiv2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(/arquivos/mamonas/mamonaslogo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainDivP1{
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    height: 100%;
+    width: 100vw;
+    color: #285A5B;
+    font-size: 2.5em;
+    font-family: "LaBamba";
+    font-weight: 700;
+    letter-spacing: .15em;
+}
+
+p {
+    width: 80%;
+}
+
+#mainDiv3 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url(/arquivos/mamonas/mamonas3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainDivImg{
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    opacity: .85;
+    height: 100%;
+    width: 100vw;
+    color: #285A5B;
+    font-size: 2.5em;
+    font-family: "LaBamba";
+    letter-spacing: .15em;
+}

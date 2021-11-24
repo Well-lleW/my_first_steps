@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Atividade-23-11-2021</title>
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="Atividade-23-11-2021" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/atividade-23-11-2021.html" />
+    <link rel="stylesheet" href="atividade-23-11-2021.css">
+</head>
+
+<body>
+    <main>
+
+        <section>
+            <div id="button">
+                <h3 id="rateH3">Avaliação do atendimento</h3>
+                <p id="exit" hidden>X</p>
+            </div>
+            <div id="exp" hidden>
+                <h3>Obrigado por dar sua opnião!</h3>
+            </div>
+
+            <div id="hab">
+
+                <form>
+                    <p><label>Nome: <input id="input1" name=nome> </label></p>
+                    <p><label>E-mail: <input id="input2" name=email> </label></p>
+                    <p><label for="mensagem">Mensagem:</label><input id="msg" name=mensagem type=text></label></p>
+                    <div id="divLabel">
+                        <label id="labelRate">O que achou do atendimento?<input name="rate" type="range" max="5" min="1"
+                                setp="1" list="score" required></label>
+                        <p>Na escala de 1 a 5</p>
+                        <p id="send">Enviar</p>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <datalist id="score">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+    </datalist>
+
+    <script src="atividade-23-11-2021.js"></script>
+
+</body>
+
+</html>

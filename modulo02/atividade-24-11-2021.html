@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Atividade-24-11-2021</title>
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="Atividade-24-11-2021" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/atividade-24-11-2021.html" />
+    <link rel="stylesheet" href="atividade-24-11-2021.css">
+</head>
+
+<body>
+
+            <main class="CALC">
+                
+                    <form>
+                        <div id="calcDiv">
+                        <img id="calcIcon" src="/arquivos/calculadora/calculadora.png" alt="icone calculadora">
+                        <h5>Calculadora</h5>
+                        </div>
+                        <div id="calculator">
+
+                            <div id="display">
+                                <div id="generalDiv"><p id="general"></p></div>
+
+                                <div id="numberDiv"><p id="number"></p></div>
+
+                            </div>
+
+                            <div id="buttons">
+                                <button type="button" onClick={add(7)}>7</button>
+                                <button type="button" onClick={add(8)}>8</button>
+                                <button type="button" onClick={add(9)}>9</button>
+                                <button class="signal" type="button" id="/" onClick={operation(id)}>/</button>
+                                <button type="button" onClick={add(4)}>4</button>
+                                <button type="button" onClick={add(5)}>5</button>
+                                <button type="button" onClick={add(6)}>6</button>
+                                <button class="signal" type="button" id="*" onClick={operation(id)}>x</button>
+                                <button type="button" onClick={add(1)}>1</button>
+                                <button type="button" onClick={add(2)}>2</button>
+                                <button type="button" onClick={add(3)}>3</button>
+                                <button class="signal" type="button" id="-" onClick={operation(id)}>-</button>
+                                <button type="button" onClick={add(3)}>+/-</button>
+                                <button type="button" onClick={add(0)}>0</button>
+                                <button type="button" onClick={add(3)}>.</button>
+                                <button class="signal" type="button" id="+" onClick={operation(id)}>+</button>
+                                <button class="clean" type="button" onClick={clean()}>CE</button>
+                                <button class="equal" type="button" onClick={result()}>=</button>
+                            </div>
+
+                        </div>
+                    </form>
+            </main>
+
+    <script src="atividade-24-11-2021.js"></script>
+
+</body>
+
+</html>

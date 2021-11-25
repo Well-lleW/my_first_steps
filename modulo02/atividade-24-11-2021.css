@@ -1,0 +1,104 @@
+body {
+    display: flex;
+
+    background-color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:  whitesmoke;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin-top: 25px;
+    background-color: #202020;
+    border-radius: 5px;
+}
+
+h5 {
+    font-weight: 400;
+    letter-spacing: .2px;
+}
+
+#calcDiv {
+    padding-top: 3px;
+    padding-left: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#calcIcon {
+    width: 17px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+#calculator {
+    width: 400px;
+    background-color: #202020;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 400px;
+}
+
+#display > div {
+    width: 100%;
+}
+
+#generalDiv {
+    display: flex;
+    height: 40%;
+    font-weight: 600;
+    font-size: 18px;
+    justify-content: flex-end;
+    color: rgb(167, 166, 166);
+}
+
+
+#numberDiv {
+    display: flex;
+    height: 55%;
+    font-weight: 600;
+    font-size: 45px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 2.5px;
+    margin-top: 2px;
+}
+
+button {
+    color:  whitesmoke;
+    background-color: #3b3b3b;
+    width: 98px;
+    height: 50px;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.equal {
+    background-color: #a0aeb7;
+    width: 198.5px;
+}
+
+.clean {
+    width: 198.5px;
+}
+
+.signal {
+    background-color: #323232;
+}
+

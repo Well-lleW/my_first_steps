@@ -20,16 +20,16 @@ function operation(op) {
   if ((number1 != "") & (number2 != "")) {
     switch (sign) {
       case "*":
-        total = parseFloat(number1) * parseFloat(number2);
+        total = (number1) * (number2);
         break;
       case "-":
-        total = parseFloat(number1) - parseFloat(number2);
+        total = (number1) - (number2);
         break;
       case "/":
-        total = parseFloat(number1) / parseFloat(number2);
+        total = (number1) / (number2);
         break;
       case "+":
-        total = parseFloat(number1) + parseFloat(number2);
+        total = (number1) + (number2);
         break;
     }
     // display2.innerHTML += total;

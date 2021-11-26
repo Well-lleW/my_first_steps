@@ -1,0 +1,30 @@
+body {
+    display: flex;
+  justify-content: center;
+}
+main {
+  width: 700px;
+}
+
+form {
+  display: flex;
+}
+
+#myburguer {
+    height: 410px;
+}
+
+fieldset > fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#button {
+  margin-top: 5px;
+  width: 250px;
+}
+
+table, thead, tbody, th, tr, td{
+    border: solid 1px;
+  }

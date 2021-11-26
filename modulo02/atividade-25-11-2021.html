@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Atividade-25-11-2021</title>
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="Atividade-25-11-2021" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/atividade-25-11-2021.html" />
+    <link rel="stylesheet" href="atividade-25-11-2021.css">
+</head>
+
+<body>
+
+    <main>
+
+        <form>
+            <fieldset id="myburguer">
+                <legend>My Burguer</legend>
+                <fieldset>
+                    <legend>Pão:</legend>
+                    <label><input onClick="funcaoPao(1)" type="radio" name="pao" value="3" checked>Francês (R$3,00)</label>
+                    <label><input onClick="funcaoPao(2)" type="radio" name="pao" value="8">Australiano (R$8,00)</label>
+                    <label><input onClick="funcaoPao(3)" type="radio" name="pao" value="6">Brioche (R$6,00)</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Hamburguer:</legend>
+                    <label><input onClick="funcaoBurguer(1)" type="radio" name="carne" value="13" checked>Picanha (R$13,00)</label>
+                    <label><input onClick="funcaoBurguer(2)" type="radio" name="carne" value="10">Costela (R$10,00)</label>
+                    <label><input onClick="funcaoBurguer(3)" type="radio" name="carne" value="12">Vegano (R$12,00)</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Salada:</legend>
+                    <label><input onClick="funcaoSalada(1)" type="radio" name="salada" value="1.5" checked>Alface (R$1,50)</label>
+                    <label><input onClick="funcaoSalada(2)" type="radio" name="salada" value="1.5">Tomate (R$1,50)</label>
+                    <label><input onClick="funcaoSalada(3)" type="radio" name="salada" value="0">Sem Salada (R$0,00)</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Queijo:</legend>
+                    <label><input onClick="funcaoQueijo(1)" type="radio" name="queijo" value="3" checked>Mussarela (R$3,00)</label>
+                    <label><input onClick="funcaoQueijo(2)" type="radio" name="queijo" value="3">Prato (R$3,00)</label>
+                    <label><input onClick="funcaoQueijo(3)" type="radio" name="queijo" value="5">Cheddar (R$5,00)</label>
+                </fieldset>
+                <input onClick="funcaoPedido()" id="button" type="reset" value="Concluir Pedido">
+            </fieldset>
+            <fieldset>
+                <legend>Comanda Chapeiro</legend>
+                <table>
+                    <thead>
+                      <th>Pão</th>
+                      <th>Burguer</th>
+                      <th>Salada</th>
+                      <th>Queijo</th>
+                      <th>Valor</th>
+                    </thead>
+                    <tbody id="chapeiro">
+                      
+                    </tbody>
+                 </table>
+                
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="atividade-25-11-2021.js"></script>
+
+</body>
+
+</html>

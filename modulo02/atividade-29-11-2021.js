@@ -20,7 +20,7 @@ function createPhrase() {
     const textArray = phrase.split("");
     element.innerHTML = "";
     textArray.forEach((letter, i) => {
-      setTimeout(() => (element.innerHTML += letter), 110 * i);
+      setTimeout(() => (element.innerHTML += letter), 20 * i);
     });
   }
   typeWriter(p);
@@ -35,14 +35,11 @@ function newPhrase() {
     if (phraseCount < 11) {
       phraseCount += 1;
       createPhrase();
-    } else if (phraseCount < 11) {
-      phraseCount += 1;
-      createPhrase();
     } else {
       wipeCount += 1;
       document.getElementById("whiteBoard").innerHTML = "";
       createPhrase();
-      phraseCount = 0;
+      phraseCount = 1;
       document.getElementById("notes").innerHTML =
         "Wiped " + wipeCount + "<br/>" + "Remainder " + (phraseNumber % 11);
     }

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'simpsonfontregular';
+  src: url('../arquivos/simpsonfont_demo-webfont.woff2') format('woff2'),
+       url('../arquivos/simpsonfont_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'simpsonfontregular';
+  word-spacing: 5px;
+}
+
+aside {
+  width: 200px;
+  text-align:left;
+  hyphens: auto;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+main {
+  width: 1270px;
+  height: 675px;
+  background-image: url("../arquivos/bart.png");
+  background-position: center;
+  background-size:cover;
+}
+
+section {
+  display: flex;
+  flex-flow: wrap;
+  column-gap: 2%;
+  justify-content: flex-start;
+  padding: 2% 2%;
+  margin: 0 25% 0 2%;
+ 
+}
+
+p {
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 20px;
+  height: 55px;
+  margin: 0;
+}

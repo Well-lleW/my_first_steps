@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+
+#buttons {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+button {
+  width: 32%;
+  height: 25px;
+}
+
+#leaderboard {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+fieldset {
+  margin-top: 15px;
+}
+
+table{
+  width: 100%;
+}
+table, thead, tbody, th, tr, td{
+  border: solid 1px;
+  text-align: center;
+}

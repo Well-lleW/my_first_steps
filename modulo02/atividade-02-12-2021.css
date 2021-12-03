@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Luckiest Guy script=latin rev=2";
+  src: url("https://fonts.gstatic.com/s/luckiestguy/v11/_gP_1RrxsjcxVyin9l9n_j2hTd52.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC,
+    U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+    U+FFFD;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #231f20;
+  font-family: "Luckiest Guy script=latin rev=2";
+  color: #f4f2f3e5;
+}
+
+main {
+  width: 475px;
+  height: 475px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  background-image: url(../arquivos/xocross.png);
+  background-size: contain;
+  border: 20px solid burlywood;
+}
+
+button {
+  width: 465px;
+  height: 45px;
+  font-size: 28px;
+  background-color: transparent;
+}
+
+.gameButton {
+  width: 150px;
+  height: 150px;
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.gameButton:hover {
+  background-color: rgba(207, 207, 207, 0.075);
+  transform: scale(1.01);
+}
+
+#reset {
+  margin-bottom: 20px;
+  height: 50px;
+  width: 122px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../arquivos/wiper.png);
+  border: none;
+}
+
+#reset:hover {
+  transform: scale(1.05);
+}
+
+div {
+  width: 460px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+#winner {
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+}

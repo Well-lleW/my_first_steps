@@ -15,13 +15,23 @@
 <body>
 
     <main id="board">
-        <label><input id="10Laps" name="raceType" type="radio" value="10">Corrida rápida (10 voltas)</label>
+        <label id="firstLabel"><input id="10Laps" name="raceType" type="radio" value="10">Corrida rápida (10 voltas)</label>
         <label><input id="70Laps" name="raceType" type="radio" value="70">Grande Prêmio (70 voltas)</label>
         <label><input id="160Laps" name="raceType" type="radio" value="160">Enduro (160 voltas)</label>
-        <button id="race" type="button" onclick="startRace()">Race now!</button>
+        <button id="race" type="button" onclick="startRace()">Começar!</button>
         <div id="leaderboard"></div>
     </main>
-    <div id="test"></div>
+
+        <table id="bigTable">
+            <thead>
+              <th>Piloto</th>
+              <th>Vitórias</th>
+            </thead>
+            <tbody id="table">
+              
+            </tbody>
+         </table>
+
     <script src="atividade-05-12-2021.js"></script>
 
 </body>

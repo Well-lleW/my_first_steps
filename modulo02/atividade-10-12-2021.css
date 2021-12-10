@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  margin: 0;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#leaderboard {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+#firstLabel {
+  margin-top: 1em;
+}
+
+button {
+  margin-top: 1em;
+}
+
+table {
+  margin-top: 1em;
+  height: max-content;
+  display: none;
+}
+
+#totalWins {
+  overflow: auto;
+  height: 245px;
+}
+
+label {
+  margin-top: 0.2em;
+}
+
+table,
+thead,
+tbody,
+th,
+tr,
+td {
+  width: 200px;
+  border: solid 1px;
+  text-align: center;
+}

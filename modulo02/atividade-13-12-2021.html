@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Atividade-13-12-2021</title>
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="Atividade-13-12-2021" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/atividade-13-12-2021.html" />
+    <link rel="stylesheet" href="atividade-13-12-2021.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+
+            <form action="" method="get" class="form-example">
+
+                <label>Nome do Cliente:
+                    <input id="1" type="number" name="name" id="client" required>
+                </label>
+
+
+                <label>Data do Vencimento:
+                    <input id="2" type="date" name="date" id="dueDate" required>
+                </label>
+
+                <label>Valor devido:
+                    <input id="3" type="number" name="value" id="owed" required>
+                </label>
+
+                <div id="buttonsDiv">
+                    <input class="buttons" type="button" value="Adicionar" onclick="addClient()">
+                    <input class="buttons" type="button" value="Calcular" onclick="calculate()">
+                    <input class="buttons" type="button" value="Cliente" onclick="filterAll(filterElements, 'name')">
+                    <input class="buttons" type="button" value="Vencimento" onclick="filterAll(filterElements, 'dueDay')">
+                </div>
+
+            </form>
+
+        </section>
+        <section id="tableList">
+        <table>
+
+            <thead>
+
+                <th>Cliente</th>
+                <th>Vencimento</th>
+                <th>Valor (R$)</th>
+                <th>Juros (%)</th>
+                <th>Total</th>
+
+            </thead>
+
+            <tbody id="table">
+
+
+
+            </tbody>
+
+        </table>
+        </section>
+
+        <pre id="whereToPrint"></pre>
+    
+    </main>
+
+    <script src="atividade-13-12-2021.js"></script>
+
+</body>
+
+</html>
+

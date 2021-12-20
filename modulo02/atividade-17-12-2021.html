@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Atividade-17-12-2021</title>
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="Atividade-17-12-2021" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/atividade-17-12-2021.html" />
+    <link rel="stylesheet" href="atividade-17-12-2021.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+
+            <form action="" method="get" class="form-example">
+
+                <label>Id do Cliente:
+                    <input id="1" type="number" name="name" required>
+                </label>
+
+
+                <label>Data do Vencimento:
+                    <input id="2" type="date" name="date" required>
+                </label>
+
+                <label>Valor devido:
+                    <input id="3" type="number" name="value" required>
+                </label>
+
+                <div id="buttonsDiv">
+                    <input class="buttons" type="button" value="Adicionar" onclick="addClient()">
+                    <input class="buttons" type="button" value="Calcular" onclick="calculate()">
+                </div>
+
+                <label>Data início:
+                    <input id="4" type="date" name="date1">
+                </label>
+                <label>Data Fim:
+                    <input id="5" type="date" name="date2">
+                </label>
+
+                <label>Valor mín:
+                    <input id="6" type="number" name="value1">
+                </label>
+                <label>Valor máx:
+                    <input id="7" type="number" name="value2">
+                </label>
+
+                <div id="buttonsDiv">
+                    <input class="buttons" type="button" value="Filtrar Data" onclick="filterDate(filterElements, 'name')">
+                    <input class="buttons" type="button" value="Filtrar Valor" onclick="filterValue()">
+                </div>
+
+            </form>
+
+        </section>
+        <section id="tableList">
+        <table>
+
+            <thead>
+
+                <th>Cliente</th>
+                <th>Vencimento</th>
+                <th>Valor (R$)</th>
+                <th>Juros (%)</th>
+                <th>Total</th>
+
+            </thead>
+
+            <tbody id="table">
+
+
+
+            </tbody>
+
+        </table>
+        </section>
+
+        <pre id="whereToPrint"></pre>
+    
+    </main>
+
+    <script src="atividade-17-12-2021.js"></script>
+
+</body>
+
+</html>
+

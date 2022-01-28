@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>calculadora</title>
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="calculadora" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://well-llew.github.io/my_first_steps/modulo02/calculadora.html" />
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+
+<body>
+
+            <main class="CALC">
+                <h1>Calculator</h1>
+                    <form>
+                       
+                            <div class="calculator">
+                              
+                            <label for="operand01">Operand I:</label>
+                            <input id="operand01" type="number" name="operand01" value="0">
+                              
+                            </div>
+                            <div class="calculator">
+                             
+                            <label for="sign">Operator:</label>
+                            <select name="sign" id="sign">
+                              <option value="*" selected>*</option>
+                              <option value="/">/</option>
+                              <option value="+">+</option>
+                              <option value="-">-</option>
+                            </select>
+                              
+                            </div>
+                            <div class="calculator">
+                              
+                            <label for="operand02">Operand II:</label>
+                            <input id="operand02" type="number" name="operand02" value="0">
+                              
+                            </div>
+                            <input id="resultButton" type="button" value="Result"/>
+                            <input type="reset" value="Reset"/>
+                            </form>
+                            <div class="result">
+                            <p id="result">
+                            
+                            </p>
+                            </div>
+            </main>
+
+    <script src="calculadora.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+main {
+    display: flex;
+     flex-flow: column wrap;
+     justify-content: space-between;
+     align-items: center;
+}
+form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    column-gap: 5px;
+  }
+  
+  .calculator {
+    display: flex;
+      flex-flow: column wrap;
+      row-gap: 2.5px;
+      justify-content: space-between;
+        align-items: center;
+  }
+  
+  input, select {
+    width: 75px;
+    text-align: center;
+  }
+  .result {
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 48px;
+  }
